@@ -12,7 +12,7 @@
     width: 100%;
     height: $NAV_MENU_HEIGHT;
     padding: 0 $MIDLARGE;
-    background-color: black;
+    background-color: $GRAY_100;
     &__logo {
       position: absolute;
       left: 50%;
@@ -20,7 +20,10 @@
       transform: translateX(-50%);
     }
     &__toggle {
+      position: absolute;
+      top: 50%;
       z-index: 9001;
+      transform: translateY(-50%);
     }
     &__links {
       position: fixed;

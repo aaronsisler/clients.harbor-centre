@@ -11,14 +11,14 @@
     align-items: center;
     justify-content: space-evenly;
     padding: $SMALL;
-    color: white;
+    color: $MAIN_COLOR;
     text-align: center;
-    background-color: $GRAY_600;
+    background-color: $GRAY_200;
     &__copyright {
-      color: white;
+      color: $MAIN_COLOR;
     }
     &__link {
-      color: white;
+      color: $MAIN_COLOR;
       text-decoration: none;
       &:hover {
         color: $MAIN_COLOR_LIGHTEN;

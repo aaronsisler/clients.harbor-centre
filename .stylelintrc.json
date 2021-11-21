@@ -1,6 +1,9 @@
 {
-  "extends": ["stylelint-config-standard-scss"],
-  "plugins": ["stylelint-order"],
+  "extends": [
+    "stylelint-config-rational-order",
+    "stylelint-config-recommended-scss"
+  ],
+  "plugins": ["stylelint-order", "stylelint-config-rational-order/plugin"],
   "rules": {
     "at-rule-no-unknown": [
       true,
@@ -26,6 +29,7 @@
         "name": "include",
         "parameter": "^((?!breakpoint).)*$"
       },
+      "custom-properties",
       "declarations"
     ]
   }

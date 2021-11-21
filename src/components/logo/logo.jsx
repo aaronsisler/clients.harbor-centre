@@ -9,7 +9,7 @@ import styles from "./logo.module.scss";
 
 const logo = {
   alt: "Harbor Centre",
-  src: `${CDN_URL}/logo.png`,
+  src: `${CDN_URL}/logo__clear.png`,
 };
 
 const image = (
