@@ -4,8 +4,7 @@ const navigationLinks = [
     title: "Experience",
     links: [
       { title: "Our Tenants", href: "/tenants" },
-      { title: "Floorplans", href: "/Floorplans" },
-      { title: "Rooftop", href: "/rooftop" },
+      { title: "Floorplans", href: "/floorplans" },
     ],
   },
   {
