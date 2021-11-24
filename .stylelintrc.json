@@ -16,7 +16,8 @@
           "include",
           "mixin",
           "return",
-          "error"
+          "error",
+          "use"
         ]
       }
     ],
