@@ -1,0 +1,15 @@
+# dependencies
+/node_modules
+
+# build/production folders
+.next/
+.serverless/
+/.serverless_nextjs
+/.next-tf/
+**/.next-tf/
+/.terraform/
+**/.terraform/
+
+# local error files
+npm-debug.log*
+sh.exe.stackdump
