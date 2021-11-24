@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "next ./src",
-    "lint": "eslint \"./**/*.{js,jsx}\""
+    "lint": "eslint \"./**/*.{js,jsx}\"",
+    "gen:comp": "node ./node_modules/@ebsolutions/generate-react-templates --type=COMP",
+    "gen:cont": "node ./node_modules/@ebsolutions/generate-react-templates --type=CONT",
+    "gen:page": "node ./node_modules/@ebsolutions/generate-react-templates --type=PAGE"
   },
   "repository": {
     "type": "git",
@@ -35,6 +38,7 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
+    "@ebsolutions/generate-react-templates": "^1.6.3",
     "eslint": "^7.32.0",
     "eslint-config-next": "^12.0.4",
     "husky": "^7.0.4",
