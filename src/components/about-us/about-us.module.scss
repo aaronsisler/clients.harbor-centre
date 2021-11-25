@@ -4,7 +4,8 @@
 //Small screens - MOBILE
 @media only screen {
   .aboutUs {
-    padding: 0 $MEDIUM $XLARGE;
+    padding: $XLARGE;
+    background-color: white;
     &__title {
       @include font-type($SEC_FONT, $LARGE, bold, rgba-with-var(black, 0.8));
 

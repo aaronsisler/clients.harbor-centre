@@ -39,7 +39,7 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
-    "@ebsolutions/generate-react-templates": "^1.6.3",
+    "@ebsolutions/generate-react-templates": "^1.7.0",
     "eslint": "^7.32.0",
     "eslint-config-next": "^12.0.4",
     "husky": "^7.0.4",
