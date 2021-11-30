@@ -4,7 +4,7 @@
   "description": "Website for Harbor Centre client",
   "main": "index.js",
   "scripts": {
-    "build": "next build ./src",
+    "tf-next": "tf-next build ./src",
     "dev": "next ./src",
     "lint": "eslint \"./**/*.{js,jsx}\"",
     "gen:comp": "node ./node_modules/@ebsolutions/generate-react-templates --type=COMP",
