@@ -4,8 +4,16 @@
   "description": "Website for Harbor Centre client",
   "main": "index.js",
   "scripts": {
-    "build": "next build ./src",
+    "tf-next": "tf-next build ./src",
     "dev": "next ./src",
+    "init:beta": "cd deployment/beta && terraform init",
+    "plan:beta": "cd deployment/beta && terraform plan -var-file=./beta.tfvars",
+    "deploy:beta": "cd deployment/beta && terraform apply -auto-approve -var-file=./beta.tfvars",
+    "destroy:beta": "cd deployment/beta && terraform destroy -auto-approve -var-file=./beta.tfvars",
+    "init:prod": "cd deployment/prod && terraform init",
+    "plan:prod": "cd deployment/prod && terraform plan -var-file=./prod.tfvars",
+    "deploy:prod": "cd deployment/prod && terraform apply -auto-approve -var-file=./prod.tfvars",
+    "destroy:prod": "cd deployment/prod && terraform destroy -auto-approve -var-file=./prod.tfvars",
     "lint": "eslint \"./**/*.{js,jsx}\"",
     "gen:comp": "node ./node_modules/@ebsolutions/generate-react-templates --type=COMP",
     "gen:cont": "node ./node_modules/@ebsolutions/generate-react-templates --type=CONT",
@@ -39,7 +47,7 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
-    "@ebsolutions/generate-react-templates": "^1.6.3",
+    "@ebsolutions/generate-react-templates": "^1.7.0",
     "eslint": "^7.32.0",
     "eslint-config-next": "^12.0.4",
     "husky": "^7.0.4",
@@ -48,6 +56,7 @@
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^24.0.0",
     "stylelint-config-standard-scss": "^3.0.0",
-    "stylelint-order": "^5.0.0"
+    "stylelint-order": "^5.0.0",
+    "tf-next": "^0.10.2"
   }
 }

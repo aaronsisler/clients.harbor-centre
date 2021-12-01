@@ -1,5 +1,4 @@
 import React from "react";
-import Hyperlink from "../../atoms/hyperlink";
 
 import styles from "./landing.module.scss";
 

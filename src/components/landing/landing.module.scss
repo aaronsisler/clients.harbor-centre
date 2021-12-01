@@ -5,11 +5,8 @@
 //max-width 640px, small screens
 @media only screen {
   .landing {
-    position: relative;
-    z-index: 20;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+    margin-top: 65vmin;
+    padding: $XLARGE;
     background-color: white;
     &__title {
       @include font-type($SEC_FONT, $LARGE, bold);
@@ -25,14 +22,7 @@
       max-width: $MAX_TEXT_WIDTH;
       margin: $LARGE auto 0;
       padding: 0 $MEDIUM;
-      color: white;
       text-align: center;
-    }
-    &__cta {
-      @include CTA-link();
-
-      z-index: 20;
-      margin: $XXLARGE $MEDIUM 0;
     }
   }
 }
@@ -49,9 +39,6 @@
       margin-right: auto;
       margin-left: auto;
       padding: 0;
-    }
-    &__cta {
-      margin-bottom: 0;
     }
   }
 }

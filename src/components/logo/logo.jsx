@@ -1,8 +1,8 @@
 import React from "react";
 import NextLink from "next/link";
-import NextImage from "next/image";
 import cn from "classnames";
 
+import Image from "../../atoms/image";
 import { CDN_URL, LOGO_DIMENSIONS } from "../../config";
 
 import styles from "./logo.module.scss";
@@ -13,7 +13,7 @@ const logo = {
 };
 
 const image = (
-  <NextImage
+  <Image
     className={styles.logo__image}
     src={logo.src}
     alt={logo.alt}
