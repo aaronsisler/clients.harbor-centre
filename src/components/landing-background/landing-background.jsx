@@ -17,6 +17,7 @@ const LandingBackground = () => (
       src={background.src}
       alt={background.altText}
       layout="fill"
+      priority={true}
     />
   </div>
 );

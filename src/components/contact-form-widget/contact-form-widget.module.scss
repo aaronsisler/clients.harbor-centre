@@ -5,8 +5,7 @@
 @media only screen {
   .contactFormWidget {
     max-width: 624px;
-    margin: 0 auto;
-    margin-top: $LARGE;
+    margin: $LARGE auto 0;
     background-color: white;
     border-radius: 5px;
     box-shadow: $BOX_SHADOW_WIDGET;
