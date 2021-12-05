@@ -4,15 +4,42 @@
 //Small screens - MOBILE
 @media only screen {
   .tenant {
+    width: 80%;
+    margin: 0 auto $LARGE;
+    padding: $SMALL $MEDIUM;
+    background-color: white;
+    border-radius: $XSMALL;
+    box-shadow: $BOX_SHADOW_WIDGET;
+    &__name {
+      @include font-type($MAIN_FONT, $MIDLARGE, bold);
+
+      color: $FONT_GRAY;
+    }
+    &__link {
+    }
+    &__bio {
+      margin-top: $MEDIUM;
+      margin-bottom: $MEDIUM;
+    }
+    &__location {
+      margin-bottom: $MEDIUM;
+    }
   }
 }
 
 //Medium screens - TABLET
 @media only screen and (min-width: $MEDIUM_SCREEN) {
+  .tenant {
+    max-width: $MAX_TEXT_WIDTH;
+    margin: 0 $MEDIUM $LARGE;
+  }
 }
 
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
+  .tenant {
+    // width: 400px;
+  }
 }
 
 //XLarge screens
