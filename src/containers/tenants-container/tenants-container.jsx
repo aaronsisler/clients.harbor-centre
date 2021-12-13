@@ -7,13 +7,15 @@ import styles from "./tenants-container.module.scss";
 
 const TenantsContainer = () => (
   <div className={styles.tenantsContainer}>
-    <h1 className={styles.tenantsContainer__title}>
-      We&apos;d love to meet you
-    </h1>
-    <div className={styles.tenantsContainer__tenants}>
-      {tenants.map((tenant, index) => (
-        <Tenant key={index} {...tenant} />
-      ))}
+    <div className={styles.tenantsContainer__wrapper}>
+      <h1 className={styles.tenantsContainer__title}>
+        We&apos;d love to meet you
+      </h1>
+      <div className={styles.tenantsContainer__tenants}>
+        {tenants.map((tenant, index) => (
+          <Tenant key={index} {...tenant} />
+        ))}
+      </div>
     </div>
   </div>
 );

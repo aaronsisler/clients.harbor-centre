@@ -5,8 +5,10 @@
 @media only screen {
   .tenant {
     width: 80%;
-    margin: 0 auto $LARGE;
     padding: $SMALL $MEDIUM;
+    page-break-after: avoid;
+    page-break-before: avoid;
+    page-break-inside: avoid;
     background-color: white;
     border-radius: $XSMALL;
     box-shadow: $BOX_SHADOW_WIDGET;
@@ -31,14 +33,13 @@
 @media only screen and (min-width: $MEDIUM_SCREEN) {
   .tenant {
     max-width: $MAX_TEXT_WIDTH;
-    margin: 0 $MEDIUM $LARGE;
+    margin: 0 auto $LARGE;
   }
 }
 
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
   .tenant {
-    // width: 400px;
   }
 }
 

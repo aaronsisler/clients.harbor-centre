@@ -5,10 +5,16 @@
 @media only screen {
   .tenantsContainer {
     min-height: $MAIN_HEIGHT;
-    padding: $LARGE;
+    padding: 0 $LARGE;
+    background-color: $MAIN_COLOR_LIGHTEN;
+    &__wrapper {
+      padding-bottom: $LARGE;
+      background-color: white;
+    }
     &__title {
       @include font-type($MAIN_FONT, $LARGE, bold);
 
+      padding-top: $LARGE;
       text-align: center;
     }
     &__tenants {
@@ -33,15 +39,13 @@
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
   .tenantsContainer {
-    display: flex;
-    flex-direction: column;
-    // align-content: space-around;
-    margin: 0 auto;
     &__tenants {
-      display: grid;
-      grid-template-columns: repeat(2, 0.8fr);
-      justify-items: center;
-      // min-width: 100%;
+      display: inline-block;
+      width: 80%;
+      margin: 0 10%;
+      padding: $MIDLARGE 10% $XLARGE;
+      column-count: 2;
+      column-width: 50%;
     }
   }
 }
