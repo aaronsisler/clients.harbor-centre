@@ -5,16 +5,49 @@
 @media only screen {
   .tenantsContainer {
     min-height: $MAIN_HEIGHT;
-    background-color: cornflowerblue;
+    padding: 0 $LARGE;
+    background-color: $MAIN_COLOR_LIGHTEN;
+    &__wrapper {
+      padding-bottom: $LARGE;
+      background-color: white;
+    }
+    &__title {
+      @include font-type($MAIN_FONT, $LARGE, bold);
+
+      padding-top: $LARGE;
+      text-align: center;
+    }
+    &__tenants {
+      margin-top: $LARGE;
+    }
   }
 }
 
 //Medium screens - TABLET
 @media only screen and (min-width: $MEDIUM_SCREEN) {
+  .tenantsContainer {
+    display: flex;
+    flex-direction: column;
+    &__tenants {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 }
 
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
+  .tenantsContainer {
+    &__tenants {
+      display: inline-block;
+      width: 80%;
+      margin: 0 10%;
+      padding: $MIDLARGE 10% $XLARGE;
+      column-count: 2;
+      column-width: 50%;
+    }
+  }
 }
 
 //XLarge screens

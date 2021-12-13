@@ -1,9 +1,23 @@
 import React from "react";
 
+import tenants from "../../content/tenants";
+import Tenant from "../../components/tenant";
+
 import styles from "./tenants-container.module.scss";
 
 const TenantsContainer = () => (
-  <div className={styles.tenantsContainer}>Tenants Container</div>
+  <div className={styles.tenantsContainer}>
+    <div className={styles.tenantsContainer__wrapper}>
+      <h1 className={styles.tenantsContainer__title}>
+        We&apos;d love to meet you
+      </h1>
+      <div className={styles.tenantsContainer__tenants}>
+        {tenants.map((tenant, index) => (
+          <Tenant key={index} {...tenant} />
+        ))}
+      </div>
+    </div>
+  </div>
 );
 
 export default TenantsContainer;
