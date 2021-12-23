@@ -10,6 +10,7 @@
 /.terraform/
 **/.terraform/
 
-# local error files
+# local files
 npm-debug.log*
 sh.exe.stackdump
+**/.DS_Store
