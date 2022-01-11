@@ -5,20 +5,23 @@
 @media only screen {
   .tenantsContainer {
     min-height: $MAIN_HEIGHT;
-    padding: 0 $LARGE;
-    background-color: $MAIN_COLOR_LIGHTEN;
+    // padding: 0 20%;
     &__wrapper {
       padding-bottom: $LARGE;
-      background-color: white;
+      // background-color: white;
+      // background-color: blue;
     }
     &__title {
       @include font-type($MAIN_FONT, $LARGE, bold);
 
-      padding-top: $LARGE;
+      padding: $LARGE 0;
       text-align: center;
+      background-color: white;
     }
     &__tenants {
+      // display: flex;
       margin-top: $LARGE;
+      padding: 0 $SMALL;
     }
   }
 }

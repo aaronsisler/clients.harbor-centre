@@ -12,9 +12,10 @@ export const GOOGLE_MAPS_LOCATION =
 
 // Email
 export const POINT_OF_CONTACT_EMAIL = "aaron.sisler@eandbsolutions.com";
+// export const POINT_OF_CONTACT_EMAIL = "theharborcentre@gmail.com";
 
 // Phone number
-export const CONTACT_PHONE_NUMBER = "(252) 562-6593";
+export const CONTACT_PHONE_NUMBER = "(252) 254-4100";
 
 // Social
 export const FACEBOOK_URL = "https://www.facebook.com/DowntownElizabethCity/";

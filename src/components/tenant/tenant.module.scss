@@ -5,14 +5,34 @@
 @media only screen {
   .tenant {
     &__card {
-      margin: $SMALL;
-      padding: $MEDIUM;
+      height: 150px;
+      margin-bottom: $MEDIUM;
+      background-color: green;
+      border-radius: 15px;
       box-shadow: $BOX_SHADOW_WIDGET;
+      &Image {
+      }
+      &Name {
+        @include font-type($MAIN_FONT, $MIDLARGE);
+
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 100%;
+        padding-bottom: $MEDIUM;
+        color: white;
+        text-align: center;
+      }
     }
     &__expanded {
       margin: $SMALL;
       padding: $MEDIUM;
       box-shadow: $BOX_SHADOW_WIDGET;
+    }
+    &__bio {
+      &Entry {
+        padding: $SMALL 0;
+      }
     }
   }
 }
