@@ -23,8 +23,8 @@ const TenantCard = ({ bio, images = {}, links, location, name }) => {
         <CardMedia
           component="img"
           height="194"
-          image={cardProfile.src}
-          alt={cardProfile.alt}
+          image={images.cardProfile.src}
+          alt={images.cardProfile.alt}
         />
       </CardContent>
       <Collapse in={isExpanded} timeout="auto" unmountOnExit>
