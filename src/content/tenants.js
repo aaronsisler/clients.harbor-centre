@@ -29,7 +29,7 @@ const tenants = [
     location: "Suite B1",
     name: "Sam Davis and Associates Realty",
     links: {
-      website: "",
+      website: "https://www.samdavisrealty.com/",
       facebook: "",
       instagram: "",
     },
@@ -64,21 +64,41 @@ const tenants = [
     ],
   },
   {
-    key: "suite-b-3",
+    key: "suite-b-3-a",
     location: "Suite B3",
-    name: "Nicole J and Co/Eye Candy Digital",
+    name: "Nicole J and Co",
     links: {
       website: "",
-      facebook: "",
+      facebook: "https://www.facebook.com/helpingyousociallyshine/",
       instagram: "",
     },
     images: {
       cardProfile: {
-        src: `${CDN_URL}/tenants/tenant-suite-b-3/${cardProfileImageName}`,
+        src: `${CDN_URL}/tenants/tenant-suite-b-3-a/${cardProfileImageName}`,
         alt: "Card profile",
       },
     },
     bio: [],
+  },
+  {
+    key: "suite-b-3-b",
+    location: "Suite B3",
+    name: "Eye Candy Digital",
+    links: {
+      website: "https://eyecandydv.com/",
+      facebook: "https://www.facebook.com/eyecandydigitalvideo/",
+      instagram: "",
+    },
+    images: {
+      cardProfile: {
+        src: `${CDN_URL}/tenants/tenant-suite-b-3-b/${cardProfileImageName}`,
+        alt: "Card profile",
+      },
+    },
+    bio: [
+      "Eye Candy Digital Video is a full-service video production company.",
+      "We provide award-winning video and audio production services as well as digital media solutions to a variety of corporate, government, and private-industry clients.",
+    ],
   },
   {
     key: "suite-b-4",
@@ -107,7 +127,7 @@ const tenants = [
     name: "Latitude 36 Boutique",
     links: {
       website: "",
-      facebook: "",
+      facebook: "https://www.facebook.com/Latitude36/",
       instagram: "",
     },
     images: {
@@ -120,41 +140,6 @@ const tenants = [
       "Latitude 36, where there's a style for every latitude. We are an on-trend women's clothing boutique. We offer merchandise that is fun and comfortable, yet versatile in a full range of sizes.",
       "Come reach outside of your everyday wardrobe today!",
     ],
-  },
-  {
-    key: "suite-x-6",
-    location: "Suite B6",
-    name: "The Bridge (Flex Office)",
-    links: {
-      website: "",
-      facebook: "",
-      instagram: "",
-    },
-    images: {
-      cardProfile: {
-        src: `${CDN_URL}/tenants/tenant-suite-b-6/${cardProfileImageName}`,
-        alt: "Card profile",
-      },
-    },
-    bio: [],
-  },
-  {
-    key: "suite-c-1",
-    location: "Suite C1",
-    name: "Coming Soon",
-    links: {
-      website: "",
-      facebook: "",
-      instagram: "",
-    },
-    images: {
-      cardProfile: {
-        // src: `${CDN_URL}/tenants/tenant-b4/card-profile.jpg`,
-        src: "https://upload.wikimedia.org/wikipedia/commons/1/1c/Neil_Armstrong.jpg",
-        alt: "Card profile",
-      },
-    },
-    bio: [],
   },
 ];
 
