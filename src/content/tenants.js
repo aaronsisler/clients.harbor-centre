@@ -66,7 +66,7 @@ const tenants = [
   {
     key: "suite-b-3-a",
     location: "Suite B3",
-    name: "Nicole J and Co",
+    name: "Nicole J and Co. Social Media Management",
     links: {
       website: "",
       facebook: "https://www.facebook.com/helpingyousociallyshine/",
@@ -78,7 +78,9 @@ const tenants = [
         alt: "Card profile",
       },
     },
-    bio: [],
+    bio: [
+      "Marketing, branding & social media group based out of Elizabeth City, NC.",
+    ],
   },
   {
     key: "suite-b-3-b",
