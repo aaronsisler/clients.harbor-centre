@@ -1,8 +1,8 @@
 import React from "react";
 
-import tenants from "../../content/tenants";
-import TenantCard from "../../components/tenant-card";
 import LandingBackground from "../../components/landing-background";
+import TenantCard from "../../components/tenant-card";
+import tenants from "../../content/tenants";
 
 import styles from "./tenants-container.module.scss";
 

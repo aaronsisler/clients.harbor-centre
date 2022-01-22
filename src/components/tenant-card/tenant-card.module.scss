@@ -5,11 +5,31 @@
 @media only screen {
   .tenantCard {
     margin-bottom: $MEDIUM;
+    &__cardMain {
+      padding: 0 !important;
+    }
+    .cardMain {
+      &__cardProfileImage {
+      }
+      &__title {
+        @include font-type($MAIN_FONT, $MIDLARGE, bold);
+
+        padding: $SMALL 0;
+        text-align: center;
+      }
+    }
   }
 }
 
 //Medium screens - TABLET
 @media only screen and (min-width: $MEDIUM_SCREEN) {
+  .tenantCard {
+    .cardMain {
+      &__cardProfileImage {
+        max-height: 250px;
+      }
+    }
+  }
 }
 
 //Large screens - DESKTOP

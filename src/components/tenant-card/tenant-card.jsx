@@ -8,24 +8,23 @@ import Collapse from "@mui/material/Collapse";
 
 import styles from "./tenant-card.module.scss";
 
-const cardProfile = {
-  src: "https://upload.wikimedia.org/wikipedia/commons/1/1c/Neil_Armstrong.jpg",
-  alt: "Card profile",
-};
-
 const TenantCard = ({ bio, images = {}, links, location, name }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
     <Card className={styles.tenantCard}>
-      <CardContent onClick={() => setIsExpanded(!isExpanded)}>
-        {name}
+      <CardContent
+        className={styles.tenantCard__cardMain}
+        onClick={() => setIsExpanded(!isExpanded)}
+      >
         <CardMedia
           component="img"
-          height="194"
+          // height="194"
+          className={styles.cardMain__cardProfileImage}
           image={images.cardProfile.src}
           alt={images.cardProfile.alt}
         />
+        <div className={styles.cardMain__title}>{name}</div>
       </CardContent>
       <Collapse in={isExpanded} timeout="auto" unmountOnExit>
         <CardContent>{bio}</CardContent>
