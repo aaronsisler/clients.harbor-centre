@@ -4,10 +4,10 @@ import styles from "./landing.module.scss";
 
 const Landing = () => (
   <div className={styles.landing}>
-    <h1 className={styles.landing__title}>Landing</h1>
-    <p className={styles.landing__secondary}>Experience Local</p>
+    <h1 className={styles.landing__title}>Experience Local</h1>
     <p className={styles.landing__secondary}>
-      This will be showcasing the three things like Work, Shop, Dine
+      Come visit our Main Street location in downtown Elizabeth City for all of
+      your shopping and dining needs.
     </p>
   </div>
 );

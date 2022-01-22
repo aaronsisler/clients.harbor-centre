@@ -4,18 +4,18 @@ const navigationLinks = [
     title: "Experience",
     links: [
       { title: "Our Tenants", href: "/tenants" },
-      { title: "Floorplans", href: "/floorplans" },
+      // { title: "Floorplans", href: "/floorplans" },
     ],
   },
+  // {
+  //   key: "location",
+  //   title: "Location",
+  //   links: [{ title: "Main Street", href: "/main-street" }],
+  // },
   {
-    key: "location",
-    title: "Location",
-    links: [{ title: "Main Street", href: "/main-street" }],
-  },
-  {
-    key: "about",
-    title: "About Us",
-    links: [{ title: "Contact Us", href: "/contact" }],
+    key: "connect-with-us",
+    title: "Connect With Us",
+    links: [{ title: "Message Us", href: "/contact" }],
   },
 ];
 
