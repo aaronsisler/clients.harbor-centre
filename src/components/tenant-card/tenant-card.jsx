@@ -19,7 +19,6 @@ const TenantCard = ({ bio, images = {}, links, location, name }) => {
       >
         <CardMedia
           component="img"
-          // height="194"
           className={styles.cardMain__cardProfileImage}
           image={images.cardProfile.src}
           alt={images.cardProfile.alt}

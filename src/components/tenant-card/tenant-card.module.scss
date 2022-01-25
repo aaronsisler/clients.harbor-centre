@@ -4,7 +4,8 @@
 //Small screens - MOBILE
 @media only screen {
   .tenantCard {
-    margin-bottom: $MEDIUM;
+    margin-bottom: $MIDLARGE;
+    border-radius: 15px;
     &__cardMain {
       padding: 0 !important;
     }
@@ -14,7 +15,7 @@
       &__title {
         @include font-type($MAIN_FONT, $MIDLARGE, bold);
 
-        padding: $SMALL 0;
+        padding: $SMALL;
         text-align: center;
       }
     }
@@ -24,9 +25,14 @@
 //Medium screens - TABLET
 @media only screen and (min-width: $MEDIUM_SCREEN) {
   .tenantCard {
+    max-width: 70%;
+    margin-inline: auto;
+    margin-bottom: $XLARGE;
     .cardMain {
       &__cardProfileImage {
-        max-height: 250px;
+      }
+      &__title {
+        @include font-type($MAIN_FONT, $LARGE, bold);
       }
     }
   }
