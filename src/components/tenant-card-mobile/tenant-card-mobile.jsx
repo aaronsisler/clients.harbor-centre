@@ -6,15 +6,15 @@ import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Collapse from "@mui/material/Collapse";
 
-import styles from "./tenant-card.module.scss";
+import styles from "./tenant-card-mobile.module.scss";
 
-const TenantCard = ({ bio, images = {}, links, location, name }) => {
+const TenantCardMobile = ({ bio, images = {}, links, location, name }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <Card className={styles.tenantCard}>
+    <Card className={styles.tenantCardMobile}>
       <CardContent
-        className={styles.tenantCard__cardMain}
+        className={styles.tenantCardMobile__cardMain}
         onClick={() => setIsExpanded(!isExpanded)}
       >
         <CardMedia
@@ -32,7 +32,7 @@ const TenantCard = ({ bio, images = {}, links, location, name }) => {
   );
 };
 
-TenantCard.propTypes = {
+TenantCardMobile.propTypes = {
   bio: PropTypes.arrayOf(PropTypes.string),
   links: PropTypes.shape({
     website: PropTypes.string,
@@ -44,4 +44,4 @@ TenantCard.propTypes = {
   phoneNumber: PropTypes.string,
 };
 
-export default TenantCard;
+export default TenantCardMobile;
