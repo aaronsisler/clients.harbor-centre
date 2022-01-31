@@ -4,7 +4,7 @@ const cardProfileImageName = "tenant-image__card-profile.jpg";
 
 const tenants = [
   {
-    key: "suite-a-1",
+    tenantId: "suite-a-1",
     location: "Suite A1",
     name: "Harbor Pharmacy",
     links: {
@@ -25,7 +25,7 @@ const tenants = [
     ],
   },
   {
-    key: "suite-b-1",
+    tenantId: "suite-b-1",
     location: "Suite B1",
     name: "Sam Davis and Associates Realty",
     links: {
@@ -46,7 +46,7 @@ const tenants = [
     ],
   },
   {
-    key: "suite-b-2",
+    tenantId: "suite-b-2",
     location: "Suite B2",
     name: "Sultry Scents",
     links: {
@@ -64,7 +64,7 @@ const tenants = [
     ],
   },
   {
-    key: "suite-b-3-a",
+    tenantId: "suite-b-3-a",
     location: "Suite B3",
     name: "Nicole J and Co. Social Media Management",
     links: {
@@ -83,7 +83,7 @@ const tenants = [
     ],
   },
   {
-    key: "suite-b-3-b",
+    tenantId: "suite-b-3-b",
     location: "Suite B3",
     name: "Eye Candy Digital",
     links: {
@@ -103,7 +103,7 @@ const tenants = [
     ],
   },
   {
-    key: "suite-b-4",
+    tenantId: "suite-b-4",
     location: "Suite B4",
     name: "Adaeze Opara Photography",
     links: {
@@ -124,7 +124,7 @@ const tenants = [
     ],
   },
   {
-    key: "suite-b-5",
+    tenantId: "suite-b-5",
     location: "Suite B5",
     name: "Latitude 36 Boutique",
     links: {
