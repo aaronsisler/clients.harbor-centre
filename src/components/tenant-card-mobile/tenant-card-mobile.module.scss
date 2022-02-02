@@ -9,14 +9,39 @@
     &__cardMain {
       padding: 0 !important;
     }
+    &__cardContent {
+    }
     .cardMain {
       &__cardProfileImage {
       }
+      &__titleBlock {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        padding: $SMALL;
+      }
+    }
+    .titleBlock {
       &__title {
         @include font-type($MAIN_FONT, $MIDLARGE, bold);
 
-        padding: $SMALL;
+        color: $FONT_SEC_GRAY;
         text-align: center;
+      }
+      &__expand {
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        font-size: $LARGE;
+      }
+    }
+    .cardContent {
+      &__links {
+      }
+      &__bio {
+        display: grid;
+        gap: $SMALL;
+        .bio__lineItem {
+        }
       }
     }
   }

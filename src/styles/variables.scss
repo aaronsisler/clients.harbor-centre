@@ -29,7 +29,9 @@ $PRETTY_BLUE: #1563ff;
 $PRETTY_PURPLE: #623ce4;
 
 // Feature Specific Colors
-$FONT_GRAY: rgba(0, 0, 0, 0.7);
+// $FONT_GRAY: rgba(0, 0, 0, 0.7);
+$FONT_GRAY: rgb(70, 70, 70);
+$FONT_SEC_GRAY: rgb(44, 46, 47);
 $BORDER_GRAY: rgba(0, 0, 0, 0.5);
 $BOX_SHADOW_GRAY: rgba(189, 195, 199, 0.6);
 $BOX_SHADOW: 1px 2px $BOX_SHADOW_GRAY;
