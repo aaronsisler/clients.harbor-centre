@@ -42,18 +42,36 @@ const TenantCardMobile = ({ bio, images = {}, links, location, name }) => {
         <CardContent className={styles.tenantCardMobile__cardContent}>
           <div className={styles.cardContent__links}>
             {links?.website && (
-              <ExternalIconLink href={links.website}>
-                <DevicesIcon />
+              <ExternalIconLink
+                className={styles.links__link}
+                href={links.website}
+              >
+                <DevicesIcon
+                  style={{ fill: "rgb(54 18 104)" }}
+                  className={styles.link__icon}
+                />
               </ExternalIconLink>
             )}
             {links?.facebook && (
-              <ExternalIconLink href={links.facebook}>
-                <FacebookIcon />
+              <ExternalIconLink
+                className={styles.links__link}
+                href={links.facebook}
+              >
+                <FacebookIcon
+                  style={{ fill: "rgb(12,146,243)" }}
+                  className={styles.link__icon}
+                />
               </ExternalIconLink>
             )}
             {links?.instagram && (
-              <ExternalIconLink href={links.instagram}>
-                <InstagramIcon />
+              <ExternalIconLink
+                className={styles.links__link}
+                href={links.instagram}
+              >
+                <InstagramIcon
+                  style={{ fill: "#bc1888" }}
+                  className={styles.link__icon}
+                />
               </ExternalIconLink>
             )}
           </div>

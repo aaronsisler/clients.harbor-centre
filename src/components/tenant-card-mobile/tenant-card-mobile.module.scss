@@ -10,6 +10,10 @@
       padding: 0 !important;
     }
     &__cardContent {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: $SMALL;
+      padding: 0 $MEDIUM $MEDIUM !important;
     }
     .cardMain {
       &__cardProfileImage {
@@ -36,6 +40,14 @@
     }
     .cardContent {
       &__links {
+        display: flex;
+        flex-direction: row;
+        gap: $MIDSMALL;
+        .links__link {
+          .link__icon {
+            font-size: $XLARGE;
+          }
+        }
       }
       &__bio {
         display: grid;
