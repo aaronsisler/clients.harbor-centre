@@ -7,15 +7,7 @@ import CardContent from "@mui/material/CardContent";
 
 import styles from "./tenant-card-desktop.module.scss";
 
-const TenantCardDesktop = ({
-  bio,
-  handleOpen,
-  images = {},
-  links,
-  location,
-  name,
-  tenantId,
-}) => {
+const TenantCardDesktop = ({ handleOpen, images = {}, name, tenantId }) => {
   return (
     <Card className={styles.tenantCardDesktop}>
       <CardContent
@@ -35,19 +27,10 @@ const TenantCardDesktop = ({
 };
 
 TenantCardDesktop.propTypes = {
-  bio: PropTypes.arrayOf(PropTypes.string),
   images: PropTypes.shape({
     cardProfile: PropTypes.object,
-    extra: PropTypes.array,
   }),
-  links: PropTypes.shape({
-    website: PropTypes.string,
-    facebook: PropTypes.string,
-    instagram: PropTypes.string,
-  }),
-  location: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  phoneNumber: PropTypes.string,
 };
 
 export default TenantCardDesktop;

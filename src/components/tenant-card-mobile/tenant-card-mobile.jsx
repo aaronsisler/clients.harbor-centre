@@ -5,14 +5,12 @@ import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Collapse from "@mui/material/Collapse";
+import DevicesIcon from "@mui/icons-material/Devices";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import DevicesIcon from "@mui/icons-material/Devices";
 
 import ExternalIconLink from "../../atoms/external-icon-link";
-
-// import DesktopWindowsIcon from '@mui/icons-material/DesktopWindows';
 
 import styles from "./tenant-card-mobile.module.scss";
 

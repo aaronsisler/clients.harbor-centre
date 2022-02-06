@@ -16,8 +16,6 @@
       padding: 0 $MEDIUM $MEDIUM !important;
     }
     .cardMain {
-      &__cardProfileImage {
-      }
       &__titleBlock {
         display: grid;
         grid-template-columns: 1fr auto;
@@ -52,8 +50,6 @@
       &__bio {
         display: grid;
         gap: $SMALL;
-        .bio__lineItem {
-        }
       }
     }
   }
@@ -66,10 +62,27 @@
     margin-inline: auto;
     margin-bottom: $XLARGE;
     .cardMain {
-      &__cardProfileImage {
+      &__titleBlock {
+        .titleBlock {
+          &__title {
+            @include font-type($MAIN_FONT, $LARGE, bold);
+          }
+          &__expand {
+            font-size: $XLARGE;
+          }
+        }
       }
-      &__title {
-        @include font-type($MAIN_FONT, $LARGE, bold);
+    }
+    .cardContent {
+      &__links {
+        padding: $SMALL $MEDIUM;
+      }
+      &__bio {
+        gap: $MIDLARGE;
+        padding: 0 $MEDIUM $MEDIUM;
+        .bio__lineItem {
+          font-size: $MIDLARGE;
+        }
       }
     }
   }
@@ -77,19 +90,6 @@
 
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
-  .tenantCardMobile {
-    max-width: 100%;
-    page-break-after: avoid;
-    page-break-before: avoid;
-    page-break-inside: avoid;
-    .cardMain {
-      &__cardProfileImage {
-      }
-      &__title {
-        @include font-type($MAIN_FONT, $MEDIUM, bold);
-      }
-    }
-  }
 }
 
 //XLarge screens
