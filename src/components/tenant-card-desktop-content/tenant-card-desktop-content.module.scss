@@ -16,7 +16,8 @@
     top: 50%;
     left: 50%;
     min-width: 70%;
-    min-height: 65%;
+    height: 85%;
+    padding: $LARGE;
     background-color: whitesmoke;
     border-radius: 10px;
     transform: translate(-50%, -45%);
@@ -24,7 +25,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      padding: $SMALL $MEDIUM;
+      margin-bottom: $SMALL;
       .header {
         &__title {
           @include font-type($MAIN_FONT, $LARGE, bold);
@@ -36,27 +37,33 @@
         }
       }
     }
-    &__body {
-      display: grid;
-      grid-template-rows: auto 1fr;
-      gap: $SMALL;
-      padding: 0 $MEDIUM $SMALL;
-      .body__links {
-        display: flex;
-        flex-direction: row;
-        gap: $MIDSMALL;
-        .links__link {
-          .link__icon {
-            font-size: $XLARGE;
+    .content {
+      &__body {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: $SMALL;
+        .body__links {
+          display: flex;
+          flex-direction: row;
+          gap: $MIDSMALL;
+          .links__link {
+            .link__icon {
+              font-size: $XLARGE;
+            }
+          }
+        }
+        .body__bio {
+          display: grid;
+          gap: $MEDIUM;
+          height: fit-content;
+          .bio__lineItem {
+            max-width: 80%;
+            font-size: $MEDIUM;
           }
         }
       }
-      .body__bio {
-        display: grid;
-        gap: $MEDIUM;
-        .bio__lineItem {
-          font-size: $MEDIUM;
-        }
+      &__images {
+        display: none;
       }
     }
   }
@@ -64,6 +71,36 @@
 
 //XLarge screens
 @media only screen and (min-width: $XLARGE_SCREEN) {
+  .tenantCardDesktopContent {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    max-width: $MAX_TEXT_WIDTH + 350px;
+    &__content {
+      display: flex;
+      align-items: stretch;
+      min-height: 100%;
+      overflow-y: hidden;
+      // background-color: blue;
+    }
+    .content {
+      &__body {
+        max-width: $MAX_TEXT_WIDTH;
+        overflow-y: scroll;
+      }
+      &__images {
+        display: unset;
+        flex-grow: 1;
+        max-width: 350px;
+        min-height: 100%;
+        overflow-y: scroll;
+        background-color: yellow;
+        .images__galleryImage {
+          height: 400px;
+          background-color: pink;
+        }
+      }
+    }
+  }
 }
 
 //XXLarge screens

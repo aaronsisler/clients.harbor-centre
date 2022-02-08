@@ -17,6 +17,16 @@ const tenants = [
         src: `${CDN_URL}/tenants/tenant-suite-a-1/${cardProfileImageName}`,
         alt: "Pharmacy staff",
       },
+      gallery: [
+        {
+          src: `${CDN_URL}/tenants/tenant-suite-a-1/${cardProfileImageName}`,
+          alt: "Pharmacy staff",
+        },
+        {
+          src: `${CDN_URL}/tenants/tenant-suite-a-1/${cardProfileImageName}`,
+          alt: "Pharmacy staff",
+        },
+      ],
     },
     bio: [
       "Harbor Pharmacy is a local, family-owned pharmacy in the heart of Downtown Elizabeth City. We offer prescription and over-the-counter medications, immunizations and a select assortment of medical equipment.",
