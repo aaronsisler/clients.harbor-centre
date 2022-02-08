@@ -80,7 +80,6 @@
       align-items: stretch;
       min-height: 100%;
       overflow-y: hidden;
-      // background-color: blue;
     }
     .content {
       &__body {
@@ -88,15 +87,17 @@
         overflow-y: scroll;
       }
       &__images {
-        display: unset;
+        display: grid;
         flex-grow: 1;
+        gap: $MIDSMALL;
         max-width: 350px;
-        min-height: 100%;
         overflow-y: scroll;
-        background-color: yellow;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+          display: none; /* Safari and Chrome */
+        }
         .images__galleryImage {
-          height: 400px;
-          background-color: pink;
+          height: 100%;
         }
       }
     }

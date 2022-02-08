@@ -23,7 +23,7 @@ const tenants = [
           alt: "Pharmacy staff",
         },
         {
-          src: `${CDN_URL}/tenants/tenant-suite-a-1/${cardProfileImageName}`,
+          src: `${CDN_URL}/tenants/tenant-suite-b-1/${cardProfileImageName}`,
           alt: "Pharmacy staff",
         },
       ],

@@ -65,16 +65,13 @@ const TenantCardDesktopContent = ({ handleClose, tenant }) => (
       </div>
       <aside className={styles.content__images}>
         {tenant?.images?.gallery?.map((image, index) => (
-          // <CardMedia
-          //   key={index}
-          //   component="img"
-          //   className={styles.images__galleryImage}
-          //   image={image.src}
-          //   alt={image.alt}
-          // />
-          <div className={styles.images__galleryImage} key={index}>
-            Image {index}
-          </div>
+          <CardMedia
+            key={index}
+            component="img"
+            className={styles.images__galleryImage}
+            image={image.src}
+            alt={image.alt}
+          />
         ))}
       </aside>
     </div>
