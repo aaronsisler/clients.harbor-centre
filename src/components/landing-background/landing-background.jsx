@@ -7,7 +7,7 @@ import styles from "./landing-background.module.scss";
 
 const background = {
   altText: "Harbor Centre front",
-  src: `${CDN_URL}/landing__front.jpg`,
+  src: `${CDN_URL}/generic__building-bright.jpg`,
 };
 
 const LandingBackground = () => (

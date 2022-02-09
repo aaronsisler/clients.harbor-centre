@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 
-import LandingBackground from "../../components/landing-background";
+import BackgroundImage from "../../components/background-image";
 import TenantCardDesktop from "../../components/tenant-card-desktop";
 import TenantCardMobile from "../../components/tenant-card-mobile";
 import TenantContentModal from "../../components/tenant-content-modal";
@@ -34,6 +34,12 @@ const useMediaQuery = (width) => {
   return targetReached;
 };
 
+const tenantsBackgroundImage = {
+  altText: "Harbor Centre front",
+  // srcPath: "landing__front.jpg",
+  srcPath: "generic__building-muted.jpg",
+};
+
 const TenantsContainer = () => {
   const isMobile = useMediaQuery(1024);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -51,7 +57,7 @@ const TenantsContainer = () => {
 
   return (
     <div className={styles.tenantsContainer}>
-      <LandingBackground />
+      <BackgroundImage {...tenantsBackgroundImage} />
       <h1 className={styles.tenantsContainer__title}>
         We&apos;d love to meet you!
       </h1>

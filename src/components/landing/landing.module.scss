@@ -11,7 +11,6 @@
     &__title {
       @include font-type($SEC_FONT, $LARGE, bold);
 
-      margin-top: $XXLARGE;
       padding: 0 $SMALL;
       color: black;
       text-align: center;

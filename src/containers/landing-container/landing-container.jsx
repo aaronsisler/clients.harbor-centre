@@ -4,14 +4,19 @@ import Building from "../../components/building";
 import ContactFormWidget from "../../components/contact-form-widget";
 import FlowBreak from "../../components/flow-break";
 import Landing from "../../components/landing";
-import LandingBackground from "../../components/landing-background";
+import BackgroundImage from "../../components/background-image";
 import Location from "../../components/location";
 
 import styles from "./landing-container.module.scss";
 
+const landingBackgroundImage = {
+  altText: "Harbor Centre front",
+  srcPath: "generic__building-bright.jpg",
+};
+
 const LandingContainer = () => (
   <div className={styles.landingContainer}>
-    <LandingBackground />
+    <BackgroundImage {...landingBackgroundImage} />
     <Landing />
     <FlowBreak />
     {/* <AboutUs /> */}
