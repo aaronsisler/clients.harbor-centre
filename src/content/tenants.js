@@ -19,12 +19,28 @@ const tenants = [
       },
       gallery: [
         {
-          src: `${CDN_URL}/tenants/tenant-suite-a-1/${cardProfileImageName}`,
-          alt: "Pharmacy staff",
+          src: `${CDN_URL}/tenants/tenant-suite-a-1/tenant-image__1.jpg`,
+          alt: "Pharmacy inventory",
         },
         {
-          src: `${CDN_URL}/tenants/tenant-suite-b-1/${cardProfileImageName}`,
-          alt: "Pharmacy staff",
+          src: `${CDN_URL}/tenants/tenant-suite-a-1/tenant-image__2.jpg`,
+          alt: "Pharmacy inventory",
+        },
+        {
+          src: `${CDN_URL}/tenants/tenant-suite-a-1/tenant-image__3.jpg`,
+          alt: "Pharmacy inventory",
+        },
+        {
+          src: `${CDN_URL}/tenants/tenant-suite-a-1/tenant-image__4.jpg`,
+          alt: "Pharmacy inventory",
+        },
+        {
+          src: `${CDN_URL}/tenants/tenant-suite-a-1/tenant-image__5.jpg`,
+          alt: "Pharmacy inventory",
+        },
+        {
+          src: `${CDN_URL}/tenants/tenant-suite-a-1/tenant-image__6.jpg`,
+          alt: "Pharmacy inventory",
         },
       ],
     },
@@ -48,6 +64,12 @@ const tenants = [
         src: `${CDN_URL}/tenants/tenant-suite-b-1/${cardProfileImageName}`,
         alt: "Card profile",
       },
+      gallery: [
+        {
+          src: `${CDN_URL}/tenants/tenant-suite-b-1/tenant-image__1.jpg`,
+          alt: "Sam Davis headshot",
+        },
+      ],
     },
     bio: [
       "Sam Davis is the Owner/Broker of Sam Davis and Associates Realty, LLC. His experience owning Davis Hardware and involvement in Pasquotank County Commissions, Rotary, and N.C. Jaycees has kept him connected in and around Elizabeth City, NC.",
@@ -67,6 +89,16 @@ const tenants = [
         src: `${CDN_URL}/tenants/tenant-suite-b-2/${cardProfileImageName}`,
         alt: "Card profile",
       },
+      gallery: [
+        {
+          src: `${CDN_URL}/tenants/tenant-suite-b-2/tenant-image__1.jpg`,
+          alt: "Scents owner",
+        },
+        {
+          src: `${CDN_URL}/tenants/tenant-suite-b-2/tenant-image__2.jpg`,
+          alt: "Scents image",
+        },
+      ],
     },
     bio: [
       "My name is Annie and I am the owner of Sultry Scent Company! I offer hand-poured candles, wax melts, handmade soaps, sugar scrubs, lip balms, bath bombs and more.",
@@ -99,7 +131,7 @@ const tenants = [
     links: {
       website: "https://eyecandydv.com/",
       facebook: "https://www.facebook.com/eyecandydigitalvideo/",
-      instagram: "",
+      instagram: "Three members of company",
     },
     images: {
       cardProfile: {
@@ -147,6 +179,12 @@ const tenants = [
         src: `${CDN_URL}/tenants/tenant-suite-b-5/${cardProfileImageName}`,
         alt: "Card profile",
       },
+      gallery: [
+        {
+          src: `${CDN_URL}/tenants/tenant-suite-b-5/tenant-image__1.jpg`,
+          alt: "Store inventory",
+        },
+      ],
     },
     bio: [
       "Latitude 36, where there's a style for every latitude. We are an on-trend women's clothing boutique. We offer merchandise that is fun and comfortable, yet versatile in a full range of sizes.",
