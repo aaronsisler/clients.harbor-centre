@@ -6,10 +6,10 @@ import Image from "../../atoms/image";
 
 import styles from "./background-image.module.scss";
 
-const BackgroundImage = ({ altText, srcPath }) => (
+const BackgroundImage = ({ altText, isBlurred, srcPath }) => (
   <div className={styles.backgroundImage}>
     <Image
-      className={styles.backgroundImage__image}
+      className={isBlurred && styles.backgroundImage__image}
       src={`${CDN_URL}/${srcPath}`}
       alt={altText}
       layout="fill"

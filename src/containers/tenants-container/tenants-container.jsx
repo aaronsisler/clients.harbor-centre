@@ -36,7 +36,7 @@ const useMediaQuery = (width) => {
 
 const tenantsBackgroundImage = {
   altText: "Harbor Centre front",
-  // srcPath: "landing__front.jpg",
+  isBlurred: true,
   srcPath: "generic__building-muted.jpg",
 };
 
@@ -47,12 +47,10 @@ const TenantsContainer = () => {
   const handleOpen = (tenantId) => {
     setTenant(tenants.find((tenant) => tenant.tenantId === tenantId));
     setIsModalOpen(true);
-    console.log("Open sesame!");
   };
 
   const handleClose = () => {
     setIsModalOpen(false);
-    console.log("Shut it down!");
   };
 
   return (
