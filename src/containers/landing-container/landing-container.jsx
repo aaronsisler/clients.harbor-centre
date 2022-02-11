@@ -19,8 +19,8 @@ const LandingContainer = () => (
     <BackgroundImage {...landingBackgroundImage} />
     <Landing />
     <FlowBreak />
-    {/* <AboutUs /> */}
-    {/* <FlowBreak /> */}
+    <AboutUs />
+    <FlowBreak />
     {/* <Location /> */}
     {/* <FlowBreak /> */}
     {/* <Building /> */}

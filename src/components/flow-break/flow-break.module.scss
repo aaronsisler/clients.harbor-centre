@@ -5,12 +5,15 @@
 @media only screen {
   .flowBreak {
     width: 100%;
-    height: 25vmin;
+    height: 25vh;
   }
 }
 
 //Medium screens - TABLET
 @media only screen and (min-width: $MEDIUM_SCREEN) {
+  .flowBreak {
+    height: 30vmin;
+  }
 }
 
 //Large screens - DESKTOP

@@ -16,7 +16,7 @@
     top: 50%;
     left: 50%;
     min-width: 70%;
-    height: 85%;
+    height: fit-content;
     padding: $LARGE;
     background-color: whitesmoke;
     border-radius: 10px;
@@ -29,6 +29,7 @@
       .header {
         &__title {
           @include font-type($MAIN_FONT, $LARGE, bold);
+          margin-right: $LARGE;
           color: $FONT_SEC_GRAY;
         }
         &__close {
@@ -72,9 +73,15 @@
 //XLarge screens
 @media only screen and (min-width: $XLARGE_SCREEN) {
   .tenantCardDesktopContent {
+    &.noImageGallery {
+      min-width: fit-content;
+      height: fit-content;
+    }
     display: grid;
     grid-template-rows: auto 1fr;
+    min-width: fit-content;
     max-width: $MAX_TEXT_WIDTH + 350px;
+    height: 85%;
     &__content {
       display: flex;
       align-items: stretch;
@@ -87,6 +94,9 @@
         overflow-y: scroll;
       }
       &__images {
+        &.noImageGallery {
+          display: none;
+        }
         display: grid;
         flex-grow: 1;
         gap: $MIDSMALL;

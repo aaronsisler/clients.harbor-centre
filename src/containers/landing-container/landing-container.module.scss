@@ -8,6 +8,8 @@
     flex: 1 1 auto;
     flex-direction: column;
     &__contactFormWidget {
+      min-width: 95%;
+      margin-inline: $SMALL;
       margin-bottom: $XXLARGE;
     }
   }
@@ -15,10 +17,24 @@
 
 //Medium screens - TABLET
 @media only screen and (min-width: $MEDIUM_SCREEN) {
+  .landingContainer {
+    &__contactFormWidget {
+      min-width: 65%;
+      margin-inline: auto;
+      margin-bottom: $XXLARGE;
+    }
+  }
 }
 
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
+  .landingContainer {
+    &__contactFormWidget {
+      min-width: 50vmin;
+      margin-inline: auto;
+      margin-bottom: $XXLARGE;
+    }
+  }
 }
 
 //XLarge screens
