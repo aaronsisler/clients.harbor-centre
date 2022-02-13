@@ -37,7 +37,7 @@ const useMediaQuery = (width) => {
 const tenantsBackgroundImage = {
   altText: "Harbor Centre front",
   isBlurred: true,
-  srcPath: "generic__building-muted.jpg",
+  srcPath: "generic/generic__building-muted.jpg",
 };
 
 const TenantsContainer = () => {

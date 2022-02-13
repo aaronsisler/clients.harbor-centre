@@ -11,7 +11,7 @@ import styles from "./landing-container.module.scss";
 
 const landingBackgroundImage = {
   altText: "Harbor Centre front",
-  srcPath: "generic__building-bright.jpg",
+  srcPath: "generic/generic__building--door.jpg",
 };
 
 const LandingContainer = () => (
