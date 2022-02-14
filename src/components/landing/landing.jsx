@@ -8,7 +8,7 @@ const Landing = () => (
     <p className={styles.landing__secondary}>
       Harbor Centre is the home of businesses and artists with unique offerings.
       We are excited to showcase local artists throughout the building to
-      celebrate downtown Elizabeth city. Come visit our Main Street location in
+      celebrate downtown Elizabeth City. Come visit our Main Street location in
       downtown Elizabeth City for all of your shopping and dining needs.
     </p>
   </div>
