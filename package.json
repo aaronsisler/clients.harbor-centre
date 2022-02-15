@@ -4,6 +4,8 @@
   "description": "Website for Harbor Centre client",
   "main": "index.js",
   "scripts": {
+    "build": "next build ./src",
+    "export": "next export ./src",
     "tf-next": "tf-next build ./src",
     "dev": "next ./src",
     "init:beta": "cd deployment/beta && terraform init",
