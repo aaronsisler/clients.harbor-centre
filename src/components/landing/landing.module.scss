@@ -5,13 +5,13 @@
 //max-width 640px, small screens
 @media only screen {
   .landing {
-    margin-top: 65vmin;
+    // margin-top: 65vmin;
+    margin-top: 60vh;
     padding: $XLARGE;
     background-color: white;
     &__title {
       @include font-type($SEC_FONT, $LARGE, bold);
 
-      margin-top: $XXLARGE;
       padding: 0 $SMALL;
       color: black;
       text-align: center;
@@ -30,10 +30,6 @@
 //Medium screens - TABLET
 //min-width 641px, medium screens
 @media only screen and (min-width: $MEDIUM_SCREEN) {
-}
-//Large screens - DESKTOP
-//min-width 1025px, large screens
-@media only screen and (min-width: $LARGE_SCREEN) {
   .landing {
     &__secondary {
       margin-right: auto;
@@ -41,6 +37,10 @@
       padding: 0;
     }
   }
+}
+//Large screens - DESKTOP
+//min-width 1025px, large screens
+@media only screen and (min-width: $LARGE_SCREEN) {
 }
 
 //XLarge screens

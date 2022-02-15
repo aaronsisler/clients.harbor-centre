@@ -1,0 +1,64 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+//Small screens - MOBILE
+@media only screen {
+  .tenantCardDesktop {
+    margin-bottom: $MIDLARGE;
+    border-radius: 15px;
+    &__cardMain {
+      padding: 0 !important;
+    }
+    .cardMain {
+      &__cardProfileImage {
+      }
+      &__title {
+        @include font-type($MAIN_FONT, $MIDLARGE, bold);
+
+        padding: $SMALL;
+        text-align: center;
+      }
+    }
+  }
+}
+
+//Medium screens - TABLET
+@media only screen and (min-width: $MEDIUM_SCREEN) {
+  .tenantCardDesktop {
+    max-width: 70%;
+    margin-inline: auto;
+    margin-bottom: $XLARGE;
+    .cardMain {
+      &__cardProfileImage {
+      }
+      &__title {
+        @include font-type($MAIN_FONT, $LARGE, bold);
+      }
+    }
+  }
+}
+
+//Large screens - DESKTOP
+@media only screen and (min-width: $LARGE_SCREEN) {
+  .tenantCardDesktop {
+    max-width: 100%;
+    page-break-after: avoid;
+    page-break-before: avoid;
+    page-break-inside: avoid;
+    .cardMain {
+      &__cardProfileImage {
+      }
+      &__title {
+        @include font-type($MAIN_FONT, $MEDIUM, bold);
+      }
+    }
+  }
+}
+
+//XLarge screens
+@media only screen and (min-width: $XLARGE_SCREEN) {
+}
+
+//XXLarge screens
+@media only screen and (min-width: $XXLARGE_SCREEN) {
+}

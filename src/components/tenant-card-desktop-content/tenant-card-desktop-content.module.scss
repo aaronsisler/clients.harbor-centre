@@ -1,0 +1,119 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+//Small screens - MOBILE
+@media only screen {
+}
+
+//Medium screens - TABLET
+@media only screen and (min-width: $MEDIUM_SCREEN) {
+}
+
+//Large screens - DESKTOP
+@media only screen and (min-width: $LARGE_SCREEN) {
+  .tenantCardDesktopContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 70%;
+    height: fit-content;
+    padding: $LARGE;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    transform: translate(-50%, -45%);
+    &__header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: $SMALL;
+      .header {
+        &__title {
+          @include font-type($MAIN_FONT, $LARGE, bold);
+          margin-right: $LARGE;
+          color: $FONT_SEC_GRAY;
+        }
+        &__close {
+          font-size: $LARGE;
+          cursor: pointer;
+        }
+      }
+    }
+    .content {
+      &__body {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: $SMALL;
+        .body__links {
+          display: flex;
+          flex-direction: row;
+          gap: $MIDSMALL;
+          .links__link {
+            .link__icon {
+              font-size: $XLARGE;
+            }
+          }
+        }
+        .body__bio {
+          display: grid;
+          gap: $MEDIUM;
+          height: fit-content;
+          .bio__lineItem {
+            max-width: 80%;
+            font-size: $MEDIUM;
+          }
+        }
+      }
+      &__images {
+        display: none;
+      }
+    }
+  }
+}
+
+//XLarge screens
+@media only screen and (min-width: $XLARGE_SCREEN) {
+  .tenantCardDesktopContent {
+    &.noImageGallery {
+      min-width: fit-content;
+      height: fit-content;
+    }
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-width: fit-content;
+    max-width: $MAX_TEXT_WIDTH + 350px;
+    height: 85%;
+    &__content {
+      display: flex;
+      align-items: stretch;
+      min-height: 100%;
+      overflow-y: hidden;
+    }
+    .content {
+      &__body {
+        max-width: $MAX_TEXT_WIDTH;
+        overflow-y: scroll;
+      }
+      &__images {
+        &.noImageGallery {
+          display: none;
+        }
+        display: grid;
+        flex-grow: 1;
+        gap: $MIDSMALL;
+        max-width: 350px;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+          display: none; /* Safari and Chrome */
+        }
+        .images__galleryImage {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+//XXLarge screens
+@media only screen and (min-width: $XXLARGE_SCREEN) {
+}

@@ -3,9 +3,16 @@
 
 //Small screens - MOBILE
 @media only screen {
-  .floorplansContainer {
-    min-height: $MAIN_HEIGHT;
-    background-color: cornflowerblue;
+  .backgroundImage {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    &__image {
+      filter: blur(8px);
+    }
   }
 }
 

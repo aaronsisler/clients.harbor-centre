@@ -9,7 +9,6 @@
     &__title {
       @include font-type($SEC_FONT, $LARGE, bold, rgba-with-var(black, 0.8));
 
-      margin-top: $XLARGE;
       text-align: center;
     }
     &__text {

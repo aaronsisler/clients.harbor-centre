@@ -1,0 +1,101 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+//Small screens - MOBILE
+@media only screen {
+  .tenantCardMobile {
+    margin-bottom: $MIDLARGE;
+    border-radius: 15px;
+    &__cardMain {
+      padding: 0 !important;
+    }
+    &__cardContent {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: $SMALL;
+      padding: 0 $MEDIUM $MEDIUM !important;
+    }
+    .cardMain {
+      &__titleBlock {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        padding: $SMALL;
+      }
+    }
+    .titleBlock {
+      &__title {
+        @include font-type($MAIN_FONT, $MIDLARGE, bold);
+
+        color: $FONT_SEC_GRAY;
+        text-align: center;
+      }
+      &__expand {
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        font-size: $LARGE;
+      }
+    }
+    .cardContent {
+      &__links {
+        display: flex;
+        flex-direction: row;
+        gap: $MIDSMALL;
+        .links__link {
+          .link__icon {
+            font-size: $XLARGE;
+          }
+        }
+      }
+      &__bio {
+        display: grid;
+        gap: $SMALL;
+      }
+    }
+  }
+}
+
+//Medium screens - TABLET
+@media only screen and (min-width: $MEDIUM_SCREEN) {
+  .tenantCardMobile {
+    max-width: 70%;
+    margin-inline: auto;
+    margin-bottom: $XLARGE;
+    .cardMain {
+      &__titleBlock {
+        .titleBlock {
+          &__title {
+            @include font-type($MAIN_FONT, $LARGE, bold);
+          }
+          &__expand {
+            font-size: $XLARGE;
+          }
+        }
+      }
+    }
+    .cardContent {
+      &__links {
+        padding: $SMALL $MEDIUM;
+      }
+      &__bio {
+        gap: $MIDLARGE;
+        padding: 0 $MEDIUM $MEDIUM;
+        .bio__lineItem {
+          font-size: $MIDLARGE;
+        }
+      }
+    }
+  }
+}
+
+//Large screens - DESKTOP
+@media only screen and (min-width: $LARGE_SCREEN) {
+}
+
+//XLarge screens
+@media only screen and (min-width: $XLARGE_SCREEN) {
+}
+
+//XXLarge screens
+@media only screen and (min-width: $XXLARGE_SCREEN) {
+}
