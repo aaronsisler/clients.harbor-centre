@@ -6,16 +6,11 @@
   "scripts": {
     "build": "next build ./src",
     "export": "next export ./src",
-    "tf-next": "tf-next build ./src",
     "dev": "next ./src",
     "init:beta": "cd deployment/beta && terraform init",
-    "plan:beta": "cd deployment/beta && terraform plan -var-file=./beta.tfvars",
     "deploy:beta": "cd deployment/beta && terraform apply -auto-approve -var-file=./beta.tfvars",
-    "destroy:beta": "cd deployment/beta && terraform destroy -auto-approve -var-file=./beta.tfvars",
     "init:prod": "cd deployment/prod && terraform init",
-    "plan:prod": "cd deployment/prod && terraform plan -var-file=./prod.tfvars",
     "deploy:prod": "cd deployment/prod && terraform apply -auto-approve -var-file=./prod.tfvars",
-    "destroy:prod": "cd deployment/prod && terraform destroy -auto-approve -var-file=./prod.tfvars",
     "lint": "eslint \"./**/*.{js,jsx}\"",
     "gen:comp": "node ./node_modules/@ebsolutions/generate-react-templates --type=COMP",
     "gen:cont": "node ./node_modules/@ebsolutions/generate-react-templates --type=CONT",
@@ -44,7 +39,7 @@
     "axios": "^0.24.0",
     "classnames": "^2.3.1",
     "email-validator": "^2.0.4",
-    "next": "^12.0.8",
+    "next": "^12.0.10",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -62,7 +57,6 @@
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^24.0.0",
     "stylelint-config-standard-scss": "^3.0.0",
-    "stylelint-order": "^5.0.0",
-    "tf-next": "^0.10.2"
+    "stylelint-order": "^5.0.0"
   }
 }
