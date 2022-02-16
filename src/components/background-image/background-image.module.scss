@@ -10,6 +10,7 @@
     bottom: 0;
     left: 0;
     z-index: -1;
+    transition: height 999999s;
     &__image {
       filter: blur(8px);
     }
