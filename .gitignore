@@ -6,9 +6,10 @@
 
 # build/production folders
 .next/
-/.next-tf/
-**/.next-tf/
-/.terraform/
+build/
+**/build/
+out/
+**/out/
 **/.terraform/
 
 # local files
