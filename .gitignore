@@ -8,8 +8,8 @@
 .next/
 build/
 **/build/
-out/
-**/out/
+dist/
+**/dist/
 **/.terraform/
 
 # local files
