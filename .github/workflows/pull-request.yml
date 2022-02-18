@@ -5,14 +5,12 @@ name: Deploy
 
 on:
   pull_request:
-    branches: [mainxy]
+    branches: [main]
 
 jobs:
   PullRequest:
     runs-on: ubuntu-latest
     steps:
-      - uses: hashicorp/setup-terraform@v1
-
       - name: Checkout
         uses: actions/checkout@v2
 
@@ -21,23 +19,30 @@ jobs:
         with:
           node-version: 12
 
-      - name: Global Install tf-next
+      - name: Global Install aws sdk
         run: npm install -g tf-next
 
       - name: Install dependencies
-        run: npm run tf-next
+        run: npm ci
 
-      - name: Terraform Init
-        run: terraform -chdir=./deployment/beta init
+      - name: Build and Export Static files
+        run: npm run build
 
-      # - name: Terraform Plan
-      #   run: terraform -chdir=./deployment/beta plan -var-file=./beta.tfvars
+      - name: Install AWS CLI
+        id: install-aws-cli
+        uses: unfor19/install-aws-cli-action@master
+        with:
+          version: 2
+      - run: aws --version
+        shell: bash
+
+      # - name: Deploy to Beta
+      #   id: install-aws-cli
+      #   uses: unfor19/install-aws-cli-action@master
+      #   with:
+      #     version: ${{ matrix.AWS_CLI_VERSION }}
+      # - run: aws --version
+      #   shell: bash
       #   env:
       #     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
       #     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-
-      - name: Terraform Apply
-        run: terraform -chdir=./deployment/beta apply -var-file=./beta.tfvars -auto-approve
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
