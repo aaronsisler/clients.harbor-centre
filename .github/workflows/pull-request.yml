@@ -24,7 +24,6 @@ jobs:
         uses: unfor19/install-aws-cli-action@master
         with:
           version: 2
-          verbose: true
       - run: aws --version
         shell: bash
 
@@ -38,7 +37,6 @@ jobs:
         uses: unfor19/install-aws-cli-action@master
         with:
           version: 2
-          verbose: true
       - run: aws s3 sync ./dist s3://beta.harborcentreonmain.com --delete
         shell: bash
         env:
