@@ -34,7 +34,10 @@ jobs:
         run: npm run build
 
       - name: Deploy to Beta
-        run: npm run deploy:beta
+        uses: unfor19/install-aws-cli-action@master
+        with:
+          version: 2
+      - run: npm run deploy:beta
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
