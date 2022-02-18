@@ -24,7 +24,7 @@ jobs:
           node-version: 12
 
       - name: Test AWS CLI
-      - run: aws --version
+        run: aws --version
         shell: bash
 
       - name: Install dependencies
@@ -34,7 +34,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to Beta
-      - run: aws s3 sync ./dist s3://beta.harborcentreonmain.com --delete
+        run: aws s3 sync ./dist s3://beta.harborcentreonmain.com --delete
         shell: bash
         env:
           AWS_DEFAULT_REGION: us-east-1
