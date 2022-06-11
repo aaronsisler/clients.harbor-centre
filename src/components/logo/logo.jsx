@@ -1,9 +1,9 @@
 import React from "react";
-import NextLink from "next/link";
+import Link from "next/link";
 import cn from "classnames";
 
-import Image from "../../atoms/image";
-import { CDN_URL, LOGO_DIMENSIONS } from "../../config";
+import { Image } from "../../atoms/image";
+import { CDN_URL } from "../../config";
 
 import styles from "./logo.module.scss";
 
@@ -12,21 +12,13 @@ const logo = {
   src: `${CDN_URL}/logo__clear.png`,
 };
 
-const image = (
-  <Image
-    className={styles.logo__image}
-    src={logo.src}
-    alt={logo.alt}
-    height={LOGO_DIMENSIONS.height}
-    width={LOGO_DIMENSIONS.width}
-  />
-);
-
 const Logo = ({ className }) => (
   <div className={cn(styles.logo, className)}>
-    <NextLink href="/">
-      <a>{image}</a>
-    </NextLink>
+    <Link href="/">
+      <a>
+        <Image className={styles.logo__image} src={logo.src} alt={logo.alt} />
+      </a>
+    </Link>
   </div>
 );
 

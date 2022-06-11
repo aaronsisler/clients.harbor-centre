@@ -4,7 +4,7 @@ import Building from "../../components/building";
 import ContactFormWidget from "../../components/contact-form-widget";
 import FlowBreak from "../../components/flow-break";
 import Landing from "../../components/landing";
-import BackgroundImage from "../../components/background-image";
+import { BackgroundImage } from "../../components/background-image";
 import Location from "../../components/location";
 
 import styles from "./landing-container.module.scss";

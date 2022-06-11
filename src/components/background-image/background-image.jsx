@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 
 import { CDN_URL } from "../../config";
-import Image from "../../atoms/image";
+import { Image } from "../../atoms/image";
 
 import styles from "./background-image.module.scss";
 
@@ -20,14 +20,16 @@ const BackgroundImage = ({ altText, isBlurred, srcPath }) => {
     });
   }, []);
 
+  const className = isBlurred
+    ? styles.backgroundImage__imageBlurred
+    : styles.backgroundImage__image;
+
   return (
     <div className={styles.backgroundImage}>
       <Image
-        className={isBlurred && styles.backgroundImage__image}
+        className={className}
         src={`${CDN_URL}/${srcPath}`}
         alt={altText}
-        layout="fill"
-        priority={true}
       />
     </div>
   );
@@ -38,4 +40,4 @@ BackgroundImage.propTypes = {
   srcPath: PropTypes.string.isRequired,
 };
 
-export default BackgroundImage;
+export { BackgroundImage };

@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 
-import BackgroundImage from "../../components/background-image";
+import { BackgroundImage } from "../../components/background-image";
 import TenantCardDesktop from "../../components/tenant-card-desktop";
 import TenantCardMobile from "../../components/tenant-card-mobile";
 import TenantContentModal from "../../components/tenant-content-modal";
