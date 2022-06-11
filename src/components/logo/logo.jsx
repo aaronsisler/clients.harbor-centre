@@ -1,5 +1,5 @@
 import React from "react";
-import NextLink from "next/link";
+import Link from "next/link";
 import cn from "classnames";
 
 import { Image } from "../../atoms/image";
@@ -12,15 +12,13 @@ const logo = {
   src: `${CDN_URL}/logo__clear.png`,
 };
 
-const image = (
-  <Image className={styles.logo__image} src={logo.src} alt={logo.alt} />
-);
-
 const Logo = ({ className }) => (
   <div className={cn(styles.logo, className)}>
-    <NextLink href="/">
-      <img className={styles.logo__image} src={logo.src} alt={logo.alt} />
-    </NextLink>
+    <Link href="/">
+      <a>
+        <Image className={styles.logo__image} src={logo.src} alt={logo.alt} />
+      </a>
+    </Link>
   </div>
 );
 

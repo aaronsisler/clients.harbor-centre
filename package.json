@@ -49,6 +49,7 @@
     "@ebsolutions/generate-react-templates": "^1.7.0",
     "eslint": "^7.32.0",
     "eslint-config-next": "^12.0.4",
+    "eslint-config-prettier": "^8.5.0",
     "husky": "^7.0.4",
     "prettier": "^2.4.1",
     "stylelint": "^14.1.0",
