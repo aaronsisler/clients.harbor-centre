@@ -23,8 +23,3 @@ export const FACEBOOK_URL = "https://www.facebook.com/DowntownElizabethCity/";
 // Services Gateway
 // export const SERVICES_GATEWAY_URL = "https://services.eandbsolutions.com/beta";
 export const SERVICES_GATEWAY_URL = "https://services.eandbsolutions.com/prod";
-
-export const LOGO_DIMENSIONS = {
-  height: 65,
-  width: 65,
-};
