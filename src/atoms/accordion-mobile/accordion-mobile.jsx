@@ -27,9 +27,9 @@ class AccordionMobile extends React.Component {
 
     return (
       <div className={styles.accordionMobile} onClick={this.handleToggle}>
-        <h1 className={cn(styles.accordionMobile__title, hoverClassname)}>
+        <div className={cn(styles.accordionMobile__title, hoverClassname)}>
           {this.props.title}
-        </h1>
+        </div>
         <div className={cn(styles.accordionMobile__content, hoverClassname)}>
           {this.props.links.map((link, index) => (
             <Hyperlink

@@ -37,9 +37,9 @@ class AccordionDesktop extends React.Component {
         onMouseEnter={() => this.handleToggle("enter")}
         onMouseLeave={() => this.handleToggle("leave")}
       >
-        <h1 className={cn(styles.accordionDesktop__title, hoverClassname)}>
+        <div className={cn(styles.accordionDesktop__title, hoverClassname)}>
           {this.props.title}
-        </h1>
+        </div>
         <div className={cn(styles.accordionDesktop__content, hoverClassname)}>
           {this.props.links.map((link, index) => (
             <Hyperlink

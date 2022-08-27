@@ -16,10 +16,11 @@
     display: inline-block;
     margin-right: $MEDIUM;
     &__title {
-      @include font-type($MAIN_FONT, $MEDIUM, bold);
+      @include font-type($MAIN_FONT, $MEDIUM, lighter);
 
       padding: $SMALL;
       color: $MAIN_COLOR;
+      text-transform: uppercase;
       border-bottom: none;
       cursor: pointer;
       &.accordionDesktopToggled {
