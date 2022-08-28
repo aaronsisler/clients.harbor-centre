@@ -29,7 +29,7 @@ $PRETTY_BLUE: #1563ff;
 $PRETTY_PURPLE: #623ce4;
 
 // Feature Specific Colors
-$FONT_GRAY: rgb(70, 70, 70);
+$FONT_GRAY: rgb(0, 0, 0, 0.8);
 $FONT_SEC_GRAY: rgb(44, 46, 47);
 $BORDER_GRAY: rgba(0, 0, 0, 0.5);
 $BOX_SHADOW_GRAY: rgba(189, 195, 199, 0.6);
@@ -64,8 +64,10 @@ $XLARGE_SCREEN: 1441px;
 $XXLARGE_SCREEN: 1921px;
 
 // Site Fonts
-$MAIN_FONT: "PayPalSansSmall";
-$SEC_FONT: "PayPalSansBig";
+// $MAIN_FONT: "PayPalSansSmall";
+// $SEC_FONT: "PayPalSansBig";
+$MAIN_FONT: "Roboto";
+$SEC_FONT: "Roboto";
 
 // Fonts CDN
 $FONTS_CDN: "https://cdn-e-and-b-solutions.s3.amazonaws.com/resources/fonts";

@@ -1,15 +1,15 @@
 @import "./variables";
 
 @mixin font-type(
-  $fontFamily: $MAIN_FONT,
-  $fontSize: $MEDIUM,
-  $fontWeight: lighter,
+  $family: $MAIN_FONT,
+  $size: $MEDIUM,
+  $weight: 300,
   $color: $FONT_GRAY
 ) {
   color: $color;
-  font-weight: $fontWeight;
-  font-size: $fontSize;
-  font-family: $fontFamily;
+  font-weight: $weight;
+  font-size: $size;
+  font-family: $family;
 }
 
 @function rgba-with-var($color, $alpha: 1) {

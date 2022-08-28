@@ -16,7 +16,7 @@
     display: inline-block;
     margin-right: $MEDIUM;
     &__title {
-      @include font-type($MAIN_FONT, $MEDIUM, lighter);
+      @include font-type($size: $MEDIUM);
 
       padding: $SMALL;
       color: $MAIN_COLOR;
@@ -33,7 +33,7 @@
       overflow: hidden;
       background-color: white;
       &Link {
-        @include font-type($MAIN_FONT, $MEDIUM, lighter);
+        @include font-type($size: $MEDIUM);
 
         padding: $SMALL;
         &:hover {
