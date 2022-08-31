@@ -80,7 +80,7 @@
     display: grid;
     grid-template-rows: auto 1fr;
     min-width: fit-content;
-    max-width: $MAX_TEXT_WIDTH + 350px;
+    max-width: $MAX_WIDTH__TEXT + 350px;
     height: 85%;
     &__content {
       display: flex;
@@ -90,7 +90,7 @@
     }
     .content {
       &__body {
-        max-width: $MAX_TEXT_WIDTH;
+        max-width: $MAX_WIDTH__TEXT;
         overflow-y: scroll;
       }
       &__images {

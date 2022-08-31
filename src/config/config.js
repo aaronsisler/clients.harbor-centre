@@ -23,3 +23,6 @@ export const FACEBOOK_URL = "https://www.facebook.com/DowntownElizabethCity/";
 // Services Gateway
 // export const SERVICES_GATEWAY_URL = "https://services.eandbsolutions.com/beta";
 export const SERVICES_GATEWAY_URL = "https://services.eandbsolutions.com/prod";
+
+// YouTube video
+export const YOUTUBE_VIDEO_OPENING = "https://youtube.com/embed/WJrl3pAuSr8";

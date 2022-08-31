@@ -15,7 +15,7 @@
     &__text {
       @include font-type($SEC_FONT, $MEDIUM, 400, rgba-with-var(black, 0.8));
 
-      max-width: $MAX_TEXT_WIDTH;
+      max-width: $MAX_WIDTH__TEXT;
       margin: $LARGE auto 0;
       text-align: center;
     }

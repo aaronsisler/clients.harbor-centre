@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import styles from "./image.module.scss";
 
 const Image = ({ alt, className, src }) => (
-  <img className={cn(styles.image, className)} src={src} alt={alt} />
+  <img className={cn(className, styles.image)} src={src} alt={alt} />
 );
 
 Image.propTypes = {

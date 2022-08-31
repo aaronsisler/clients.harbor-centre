@@ -18,14 +18,13 @@ const LandingContainer = () => (
   <div className={styles.landingContainer}>
     <BackgroundImage {...landingBackgroundImage} />
     <Landing />
+    <Location />
     <FlowBreak />
     <AboutUs />
-    <FlowBreak />
-    {/* <Location /> */}
     {/* <FlowBreak /> */}
     {/* <Building /> */}
     {/* <FlowBreak /> */}
-    <ContactFormWidget className={styles.landingContainer__contactFormWidget} />
+    {/* <ContactFormWidget className={styles.landingContainer__contactFormWidget} /> */}
   </div>
 );
 

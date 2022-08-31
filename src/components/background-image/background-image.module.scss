@@ -6,17 +6,32 @@
   .backgroundImage {
     position: fixed;
     z-index: -1;
-    width: 100%;
-    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-    height: calc(var(--vh, 1vh) * 100);
+    display: flex;
+    min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
     &__image {
-      transform: translateY(-10%);
+      object-fit: cover;
+      object-position: 25%;
+      transform: translateY(-20%);
     }
     &__imageBlurred {
-      transform: translateY(-10%);
+      // transform: translateY(-10%);
       filter: blur(8px);
     }
   }
+  // .backgroundImage {
+  //   position: fixed;
+  //   z-index: -1;
+  //   width: 100%;
+  //   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  //   height: calc(var(--vh, 1vh) * 100);
+  //   &__image {
+  //     transform: translateY(-10%);
+  //   }
+  //   &__imageBlurred {
+  //     transform: translateY(-10%);
+  //     filter: blur(8px);
+  //   }
+  // }
 }
 
 //Medium screens - TABLET
