@@ -8,18 +8,16 @@
     margin-top: 75vh;
     background-color: white;
     &__title {
-      @include font-type($size: $LARGE, $weight: 300);
-
       padding: $XLARGE;
       color: black;
+      font-size: $LARGE;
       text-align: center;
     }
     &__content {
-      @include font-type($SEC_FONT, $size: $MEDIUM);
-
       max-width: $MAX_WIDTH__TEXT;
       margin: 0 auto $MEDIUM;
       padding: 0 $MEDIUM;
+      font-size: $MEDIUM;
       text-align: center;
     }
     &__video {
@@ -39,7 +37,6 @@
     &__video {
       max-width: $MAX_WIDTH__CONTENT;
       margin: 0 auto;
-      // padding: 0 auto;
     }
   }
 }

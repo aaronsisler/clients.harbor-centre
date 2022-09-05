@@ -1,11 +1,11 @@
 import React from "react";
 import { VideoPlayer } from "../video-player";
-import { YOUTUBE_VIDEO_OPENING } from ".././../config";
+import { YOUTUBE_VIDEO__GRAND_OPENING } from ".././../config";
 
 import styles from "./landing.module.scss";
 
 const Landing = () => (
-  <div className={styles.landing}>
+  <section className={styles.landing}>
     <h1 className={styles.landing__title}>Experience Local</h1>
     <p className={styles.landing__content}>
       Harbor Centre is the home of businesses and artists with unique offerings.
@@ -15,9 +15,9 @@ const Landing = () => (
     </p>
     <br />
     <div className={styles.landing__video}>
-      <VideoPlayer url={YOUTUBE_VIDEO_OPENING} />
+      <VideoPlayer url={YOUTUBE_VIDEO__GRAND_OPENING} />
     </div>
-  </div>
+  </section>
 );
 
 export default Landing;
