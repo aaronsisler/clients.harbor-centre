@@ -1,6 +1,6 @@
 import React from "react";
 import ExternalLink from "../../atoms/external-link";
-import { CONTACT_ADDRESS, GOOGLE_MAPS_LOCATION } from "../../config";
+import { CONTACT_ADDRESS, GOOGLE_MAPS__LOCATION } from "../../config";
 
 import styles from "./contact-address.module.scss";
 
@@ -11,7 +11,7 @@ const ContactAddress = () => (
     <p>{streetAddress}</p>
     <p>{cityStateZip}</p>
     <ExternalLink
-      href={GOOGLE_MAPS_LOCATION}
+      href={GOOGLE_MAPS__LOCATION}
       title="Get directions"
       className={styles.contactAddress__navLink}
     />

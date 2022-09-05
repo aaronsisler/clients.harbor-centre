@@ -1,12 +1,15 @@
 import React from "react";
+import { GoogleMapWidget } from "../../components/google-map-widget";
 
 import styles from "./location.module.scss";
 
 const Location = () => (
-  <div className={styles.location}>
+  <section className={styles.location}>
     <h2 className={styles.location__title}>Location</h2>
-    <p className={styles.location__text}>Location Chatter</p>
-  </div>
+    <div className={styles.location__map}>
+      <GoogleMapWidget />
+    </div>
+  </section>
 );
 
 export default Location;
