@@ -3,26 +3,9 @@
 
 //Small screens - MOBILE
 @media only screen {
-  .privacyPolicyContainer {
-    padding: $MEDIUM;
-    padding-bottom: $XLARGE;
-    &__title {
-      @include font-type($size: $MIDLARGE, $weight: 400);
-
-      margin-bottom: $LARGE;
-    }
-    .policy {
-      &__title {
-        @include font-type($size: $MEDIUM, $weight: 400);
-
-        margin-bottom: $SMALL;
-      }
-      &__content {
-        @include font-type($size: $MEDIUM);
-
-        margin-bottom: $MEDIUM;
-      }
-    }
+  .googleMapWidget {
+    width: 100%;
+    height: 500px;
   }
 }
 

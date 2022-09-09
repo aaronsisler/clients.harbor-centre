@@ -14,7 +14,7 @@ import ExternalIconLink from "../../atoms/external-icon-link";
 
 import styles from "./tenant-card-mobile.module.scss";
 
-const TenantCardMobile = ({ bio, images = {}, links, location, name }) => {
+const TenantCardMobile = ({ bio, images = {}, links, name }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
@@ -93,7 +93,6 @@ TenantCardMobile.propTypes = {
     facebook: PropTypes.string,
     instagram: PropTypes.string,
   }),
-  location: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   phoneNumber: PropTypes.string,
 };

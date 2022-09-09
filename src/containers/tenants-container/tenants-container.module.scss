@@ -9,7 +9,7 @@
       padding-bottom: $LARGE;
     }
     &__title {
-      @include font-type($MAIN_FONT, $LARGE, bold);
+      @include font-type($size: $LARGE);
 
       padding: $MEDIUM $SMALL;
       text-align: center;

@@ -5,7 +5,7 @@
 @media only screen {
   .contactPhone {
     h2 {
-      @include font-type($MAIN_FONT, $MIDLARGE, bold);
+      @include font-type($size: $MIDLARGE);
 
       color: white;
     }

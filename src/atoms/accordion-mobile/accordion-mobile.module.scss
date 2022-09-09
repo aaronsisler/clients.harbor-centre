@@ -8,7 +8,7 @@
     transform: translateZ(0);
     transition: all 0.2s;
     &__title {
-      @include font-type($MAIN_FONT, $MEDIUM, bold);
+      @include font-type($size: $MEDIUM);
 
       padding: $MEDIUM 0 $MEDIUM $MEDIUM;
       color: $MAIN_COLOR;
@@ -19,7 +19,7 @@
       overflow: hidden;
       background-color: white;
       &Link {
-        @include font-type($MAIN_FONT, $MEDIUM, lighter);
+        @include font-type($size: $MEDIUM);
 
         padding: $MEDIUM;
         border-bottom: solid 1px $GRAY_400;

@@ -75,8 +75,11 @@
       display: none;
     }
     &__linksDesktop {
-      display: block;
-      margin-left: $MEDIUM;
+      // display: block;
+      // margin-left: $MEDIUM;
+      display: flex;
+      flex: 1;
+      justify-content: center;
     }
   }
 }
