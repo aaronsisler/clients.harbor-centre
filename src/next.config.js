@@ -1,4 +1,7 @@
 module.exports = {
+  env: {
+    GOOGLE_MAPS__API_KEY: process.env.GOOGLE_MAPS__API_KEY,
+  },
   distDir: "../build",
   trailingSlash: true,
   images: {

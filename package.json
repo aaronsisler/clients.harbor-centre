@@ -49,6 +49,7 @@
   },
   "devDependencies": {
     "@ebsolutions/generate-react-templates": "^1.7.0",
+    "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
     "eslint-config-next": "^12.0.4",
     "eslint-config-prettier": "^8.5.0",
