@@ -11,7 +11,7 @@
     justify-items: center;
     margin-top: $LARGE;
     &__title {
-      @include font-type($MAIN_FONT, $MIDLARGE, bold);
+      @include font-type($size: $MIDLARGE);
     }
   }
 }

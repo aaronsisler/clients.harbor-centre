@@ -24,16 +24,16 @@
     }
     .titleBlock {
       &__title {
-        @include font-type($MAIN_FONT, $MIDLARGE, bold);
+        @include font-type($size: $MIDLARGE);
 
         color: $FONT_SEC_GRAY;
         text-align: center;
       }
       &__expand {
+        @include font-type($size: $LARGE);
         display: flex;
         align-items: flex-end;
         height: 100%;
-        font-size: $LARGE;
       }
     }
     .cardContent {
@@ -43,7 +43,7 @@
         gap: $MIDSMALL;
         .links__link {
           .link__icon {
-            font-size: $XLARGE;
+            @include font-type($size: $XLARGE);
           }
         }
       }
@@ -65,10 +65,10 @@
       &__titleBlock {
         .titleBlock {
           &__title {
-            @include font-type($MAIN_FONT, $LARGE, bold);
+            @include font-type($size: $LARGE);
           }
           &__expand {
-            font-size: $XLARGE;
+            @include font-type($size: $XLARGE);
           }
         }
       }
@@ -81,7 +81,7 @@
         gap: $MIDLARGE;
         padding: 0 $MEDIUM $MEDIUM;
         .bio__lineItem {
-          font-size: $MIDLARGE;
+          @include font-type($size: $MIDLARGE);
         }
       }
     }

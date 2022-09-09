@@ -1,7 +1,5 @@
 import React from "react";
 import AboutUs from "../../components/about-us";
-import Building from "../../components/building";
-import ContactFormWidget from "../../components/contact-form-widget";
 import FlowBreak from "../../components/flow-break";
 import Landing from "../../components/landing";
 import { BackgroundImage } from "../../components/background-image";
@@ -21,10 +19,6 @@ const LandingContainer = () => (
     <Location />
     <FlowBreak />
     <AboutUs />
-    {/* <FlowBreak /> */}
-    {/* <Building /> */}
-    {/* <FlowBreak /> */}
-    {/* <ContactFormWidget className={styles.landingContainer__contactFormWidget} /> */}
   </div>
 );
 

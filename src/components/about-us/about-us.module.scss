@@ -7,13 +7,15 @@
     padding: $XLARGE;
     background-color: white;
     &__title {
-      font-size: $LARGE;
+      @include font-type($size: $LARGE);
+
       text-align: center;
     }
     &__content {
+      @include font-type($size: $MEDIUM);
+
       max-width: $MAX_WIDTH__TEXT;
       margin: $LARGE auto 0;
-      font-size: $MEDIUM;
       text-align: center;
     }
   }

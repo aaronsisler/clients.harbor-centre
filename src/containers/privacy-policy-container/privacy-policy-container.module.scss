@@ -6,17 +6,17 @@
   .privacyPolicyContainer {
     padding: $MEDIUM;
     &__title {
-      @include font-type($MAIN_FONT, $MIDLARGE, 600);
+      @include font-type($size: $MIDLARGE);
 
       margin-bottom: $MEDIUM;
     }
     &__policyHeading {
-      @include font-type($MAIN_FONT, $MEDIUM, 600);
+      @include font-type($size: $MEDIUM);
 
       margin-bottom: $XSMALL;
     }
     &__policyText {
-      @include font-type($SEC_FONT, $MEDIUM);
+      @include font-type($size: $MEDIUM);
 
       margin-bottom: $MEDIUM;
     }

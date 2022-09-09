@@ -19,7 +19,7 @@
 }
 
 @mixin button() {
-  @include font-type($MAIN_FONT, $MEDIUM);
+  @include font-type($size: $MEDIUM);
 
   display: grid;
   align-items: center;
@@ -69,8 +69,9 @@
 }
 
 @mixin textarea() {
+  @include font-type($size: $MEDIUM);
+
   padding: $SMALL $XSMALL;
-  font-size: $MEDIUM;
   border: 1px solid $BORDER_GRAY;
   border-radius: 5px;
 }

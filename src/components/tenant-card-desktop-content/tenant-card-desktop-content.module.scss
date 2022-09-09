@@ -28,12 +28,14 @@
       margin-bottom: $SMALL;
       .header {
         &__title {
-          @include font-type($MAIN_FONT, $LARGE, bold);
+          @include font-type($size: $LARGE);
+
           margin-right: $LARGE;
           color: $FONT_SEC_GRAY;
         }
         &__close {
-          font-size: $LARGE;
+          @include font-type($size: $LARGE);
+
           cursor: pointer;
         }
       }
@@ -49,7 +51,7 @@
           gap: $MIDSMALL;
           .links__link {
             .link__icon {
-              font-size: $XLARGE;
+              @include font-type($size: $XLARGE);
             }
           }
         }
@@ -58,8 +60,9 @@
           gap: $MEDIUM;
           height: fit-content;
           .bio__lineItem {
+            @include font-type($size: $MEDIUM);
+
             max-width: 80%;
-            font-size: $MEDIUM;
           }
         }
       }

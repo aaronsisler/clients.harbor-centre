@@ -7,8 +7,9 @@
     padding-bottom: $XLARGE;
     background-color: white;
     &__title {
+      @include font-type($size: $LARGE);
+
       margin-block: $XLARGE $MEDIUM;
-      font-size: $LARGE;
       text-align: center;
     }
     &__map {

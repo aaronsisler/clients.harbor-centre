@@ -14,7 +14,7 @@
     padding: $LARGE $MEDIUM;
     opacity: 0.95;
     &__title {
-      @include font-type($MAIN_FONT, $MIDLARGE, bold);
+      @include font-type($MIDLARGE);
 
       margin-bottom: $SMALL;
       text-align: center;
@@ -28,7 +28,7 @@
       @include CTA-link();
     }
     &__emailSent {
-      @include font-type($MAIN_FONT, $MIDLARGE);
+      @include font-type($size: $MIDLARGE);
 
       margin: auto;
       text-align: center;
@@ -49,7 +49,7 @@
     min-width: 500px;
     max-width: 750px;
     &__title {
-      @include font-type($MAIN_FONT, $LARGE, bold);
+      @include font-type($size: $LARGE);
     }
   }
 }
