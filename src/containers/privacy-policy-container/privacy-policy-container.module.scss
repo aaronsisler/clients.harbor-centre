@@ -5,20 +5,23 @@
 @media only screen {
   .privacyPolicyContainer {
     padding: $MEDIUM;
+    padding-bottom: $XLARGE;
     &__title {
-      @include font-type($size: $MIDLARGE);
+      @include font-type($size: $MIDLARGE, $weight: 400);
 
-      margin-bottom: $MEDIUM;
+      margin-bottom: $LARGE;
     }
-    &__policyHeading {
-      @include font-type($size: $MEDIUM);
+    .policy {
+      &__title {
+        @include font-type($size: $MEDIUM, $weight: 400);
 
-      margin-bottom: $XSMALL;
-    }
-    &__policyText {
-      @include font-type($size: $MEDIUM);
+        margin-bottom: $SMALL;
+      }
+      &__content {
+        @include font-type($size: $MEDIUM);
 
-      margin-bottom: $MEDIUM;
+        margin-bottom: $MEDIUM;
+      }
     }
   }
 }
