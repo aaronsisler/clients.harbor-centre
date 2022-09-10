@@ -35,11 +35,11 @@
 @media only screen and (min-width: $LARGE_SCREEN) {
   .tenantsContainer {
     &__wrapper {
-      max-width: 700px;
+      max-width: 750px;
       margin: 0 auto;
     }
     &__tenants {
-      display: inline-block;
+      height: 1700px;
       padding: $MIDLARGE auto $XLARGE;
       column-count: 2;
     }

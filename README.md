@@ -1,14 +1,6 @@
 # clients.harbor-centre
 
-## Local Deployment
+## Development
 
-You will need to run the following commands:
-
-```bash
-open -e ~/.aws/credentials
-```
-
-```bash
-export AWS_ACCESS_KEY_ID=key
-export AWS_SECRET_ACCESS_KEY=secret_key
-```
+1. All code merges to the `main` branch must go through a pull request.
+1. All pull requests are subject to the Pull Request Github Action that will deploy any changes to the "beta" environment.

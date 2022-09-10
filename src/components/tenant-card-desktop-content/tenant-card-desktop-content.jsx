@@ -100,7 +100,6 @@ TenantCardDesktopContent.propTypes = {
       facebook: PropTypes.string,
       instagram: PropTypes.string,
     }),
-    location: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     phoneNumber: PropTypes.string,
   }),

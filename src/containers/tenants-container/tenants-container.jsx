@@ -1,44 +1,14 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import { BackgroundImage } from "../../components/background-image";
 import TenantCardDesktop from "../../components/tenant-card-desktop";
 import TenantCardMobile from "../../components/tenant-card-mobile";
 import TenantContentModal from "../../components/tenant-content-modal";
+import { tenantsBackgroundImage } from "../../content/background-images";
 import tenants from "../../content/tenants";
+import { useMediaQuery } from "../../utils";
 
 import styles from "./tenants-container.module.scss";
-
-const useMediaQuery = (width) => {
-  const [targetReached, setTargetReached] = useState(false);
-
-  const updateTarget = useCallback((e) => {
-    if (e.matches) {
-      setTargetReached(true);
-    } else {
-      setTargetReached(false);
-    }
-  }, []);
-
-  useEffect(() => {
-    const media = window.matchMedia(`(max-width: ${width}px)`);
-    media.addEventListener("change", updateTarget);
-
-    // Check on mount (callback is not called until a change occurs)
-    if (media.matches) {
-      setTargetReached(true);
-    }
-
-    return () => media.removeEventListener("change", updateTarget);
-  }, [updateTarget, width]);
-
-  return targetReached;
-};
-
-const tenantsBackgroundImage = {
-  altText: "Harbor Centre front",
-  isBlurred: true,
-  srcPath: "generic/generic__building-muted.jpg",
-};
 
 const TenantsContainer = () => {
   const isMobile = useMediaQuery(1024);
