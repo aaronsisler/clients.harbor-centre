@@ -63,6 +63,7 @@
   .navbar {
     display: flex;
     align-items: center;
+    opacity: 0.96;
     &__toggle {
       display: none;
     }
@@ -75,8 +76,6 @@
       display: none;
     }
     &__linksDesktop {
-      // display: block;
-      // margin-left: $MEDIUM;
       display: flex;
       flex: 1;
       justify-content: center;

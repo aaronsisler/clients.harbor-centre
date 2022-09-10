@@ -11,7 +11,7 @@ const TenantCardDesktop = ({ handleOpen, images = {}, name, tenantId }) => {
   return (
     <Card className={styles.tenantCardDesktop}>
       <CardContent
-        className={styles.tenantCardDesktop__cardMain}
+        className={styles.cardMain}
         onClick={() => handleOpen(tenantId)}
       >
         <CardMedia
