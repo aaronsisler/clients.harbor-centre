@@ -4,28 +4,33 @@
 //Small screens - MOBILE
 @media only screen {
   .contactContainer {
-    min-height: $MAIN_HEIGHT;
-    padding: $LARGE $MEDIUM;
-    background-color: black;
-    &__info {
-      display: grid;
-      gap: $MEDIUM;
-      width: 100%;
-      max-width: 624px;
-      margin: 0 auto;
-      padding: $MIDLARGE;
+    position: relative;
+    &__title {
+      @include font-type($size: $LARGE);
+
+      margin: $MEDIUM $SMALL 25vh;
       text-align: center;
-      background-color: $MAIN_COLOR_DARKEN;
-      border-radius: 5px;
-      box-shadow: $BOX_SHADOW_WIDGET_DARKEN;
     }
-    &__form {
-      max-width: 624px;
-      margin: 0 auto;
-      margin-top: $LARGE;
-      background-color: white;
-      border-radius: 5px;
-      box-shadow: $BOX_SHADOW_WIDGET;
+    &__shape {
+      position: absolute;
+      top: 30%;
+      z-index: -1;
+      width: 115vw;
+      height: 500px;
+      background: linear-gradient(to top right, #86f7cc, #67d7f5);
+      $INSIDE: 0 0, 0 400px, 115vw 200px;
+      transform: skew(50deg);
+      // transform: skew(20deg, 20deg);
+      clip-path: polygon($INSIDE);
+    }
+    &__methods {
+      display: none;
+      // display: flex;
+    }
+    .contactMethod {
+      // width: 100%;
+      // height: 50vh;
+      background-color: green;
     }
   }
 }
@@ -36,26 +41,6 @@
 
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
-  .contactContainer {
-    display: grid;
-    grid-template-columns: 350px auto;
-    align-content: center;
-    justify-content: center;
-    padding: $LARGE 5%;
-    overflow: auto;
-    &__info {
-      z-index: 2;
-      align-content: center;
-      align-self: center;
-      height: 350px;
-    }
-    &__form {
-      z-index: 1;
-      margin: 0;
-      margin-left: -$XLARGE;
-      padding: 0 $LARGE 0 $XXLARGE;
-    }
-  }
 }
 
 //XLarge screens

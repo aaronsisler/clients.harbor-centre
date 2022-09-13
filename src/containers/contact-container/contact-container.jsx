@@ -1,20 +1,26 @@
 import React from "react";
-import ContactPhone from "../../components/contact-phone";
-import ContactAddress from "../../components/contact-address";
-import ContactForm from "../../components/contact-form";
 
 import styles from "./contact-container.module.scss";
 
 const ContactContainer = () => (
   <div className={styles.contactContainer}>
-    <div className={styles.contactContainer__info}>
-      <ContactPhone />
-      <ContactAddress />
-    </div>
-    <div className={styles.contactContainer__form}>
-      <ContactForm />
-    </div>
+    <h1 className={styles.contactContainer__title}>What works best for you?</h1>
+    <div className={styles.contactContainer__shape} />
+    <section className={styles.contactContainer__methods}>
+      <div className={styles.contactMethod}>
+        <h2>Visit Us</h2>
+        <div>Map</div>
+      </div>
+      <div className={styles.contactMethod}>
+        <h2>Call Us</h2>
+        <div>Call</div>
+      </div>
+      <div className={styles.contactMethod}>
+        <h2>Write Us</h2>
+        <div>Message</div>
+      </div>
+    </section>
   </div>
 );
 
-export default ContactContainer;
+export { ContactContainer };
