@@ -1,36 +1,34 @@
+@use "sass:color";
 @import "../../styles/variables";
 @import "../../styles/mixins";
 
 //Small screens - MOBILE
 @media only screen {
   .contactContainer {
-    position: relative;
     &__title {
       @include font-type($size: $LARGE);
 
-      margin: $MEDIUM $SMALL 25vh;
+      margin: $MEDIUM $SMALL 10vh;
       text-align: center;
     }
-    &__shape {
-      position: absolute;
-      top: 30%;
-      z-index: -1;
-      width: 115vw;
-      height: 500px;
-      background: linear-gradient(to top right, #86f7cc, #67d7f5);
-      $INSIDE: 0 0, 0 400px, 115vw 200px;
-      transform: skew(50deg);
-      // transform: skew(20deg, 20deg);
-      clip-path: polygon($INSIDE);
-    }
-    &__methods {
-      display: none;
-      // display: flex;
-    }
-    .contactMethod {
-      // width: 100%;
-      // height: 50vh;
-      background-color: green;
+    &__contactMethods {
+      display: grid;
+      gap: $XLARGE;
+      justify-items: center;
+      padding: $MEDIUM;
+      .contactMethodButton {
+        @include font-type($size: $MEDIUM);
+        $COLOR: rgb(46, 113, 229);
+        width: 100%;
+        max-width: 400px;
+        padding: $MEDIUM;
+        color: white;
+        background-color: $COLOR;
+        border: $COLOR 1px solid;
+        border-radius: 4px;
+        cursor: pointer;
+        opacity: 0.75;
+      }
     }
   }
 }
@@ -41,6 +39,16 @@
 
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
+  .contactContainer {
+    &__title {
+      margin: $XLARGE $SMALL 10vh;
+    }
+    &__contactMethods {
+      // display: flex;
+      // gap: $MEDIUM;
+      // justify-content: space-evenly;
+    }
+  }
 }
 
 //XLarge screens
