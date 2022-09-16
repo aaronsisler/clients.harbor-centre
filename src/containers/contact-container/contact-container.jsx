@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import Box from "@mui/material/Box";
-import Modal from "@mui/material/Modal";
 import { BackgroundShape } from "../../components/background-shape";
-import { ContactForm } from "../../components/contact-form";
-import { ContactMethodModalContentWrapper } from "../../components/contact-method-modal-content-wrapper";
+import { ContactFormWidget } from "../../components/contact-form-widget";
+import { ContactMethodModal } from "../../components/contact-method-modal";
 import { ContactPhone } from "../../components/contact-phone";
 
 import styles from "./contact-container.module.scss";
@@ -12,14 +10,14 @@ const ContactContainer = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState(undefined);
 
-  const determineModalContent = () => {
+  const determineContactModalChild = () => {
     switch (modalContent) {
       case "Visit Us":
         return <div>Vist Us</div>;
       case "Call Us":
         return <ContactPhone />;
       case "Write Us":
-        return <ContactForm />;
+        return <ContactFormWidget />;
       default:
         return <React.Fragment></React.Fragment>;
     }
@@ -33,6 +31,7 @@ const ContactContainer = () => {
   const handleClose = () => {
     setIsModalOpen(false);
   };
+
   return (
     <div className={styles.contactContainer}>
       <h1 className={styles.contactContainer__title}>
@@ -58,16 +57,9 @@ const ContactContainer = () => {
         >
           Write Us
         </button>
-        <Modal
-          open={isModalOpen}
-          onClose={handleClose}
-          aria-labelledby="Modal for selected contact method"
-          aria-describedby="Information for slected contact method"
-        >
-          <Box>
-            <ContactMethodModalContentWrapper text={modalContent} />
-          </Box>
-        </Modal>
+        <ContactMethodModal isOpen={isModalOpen} onClose={handleClose}>
+          {determineContactModalChild()}
+        </ContactMethodModal>
       </section>
     </div>
   );

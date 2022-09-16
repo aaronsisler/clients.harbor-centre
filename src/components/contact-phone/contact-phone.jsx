@@ -5,7 +5,8 @@ import styles from "./contact-phone.module.scss";
 
 const ContactPhone = () => (
   <div className={styles.contactPhone}>
-    <h2>{CONTACT_PHONE_NUMBER}</h2>
+    <h2>Give us a ring!</h2>
+    <a href={`tel:${CONTACT_PHONE_NUMBER}`}>{CONTACT_PHONE_NUMBER}</a>
   </div>
 );
 

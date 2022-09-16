@@ -1,1 +1,1 @@
-export { default } from "./contact-form-widget";
+export { ContactFormWidget } from "./contact-form-widget";

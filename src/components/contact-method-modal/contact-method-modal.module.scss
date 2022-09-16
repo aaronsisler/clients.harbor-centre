@@ -3,21 +3,27 @@
 
 //Small screens - MOBILE
 @media only screen {
-  .contactPhone {
-    display: grid;
-    gap: $LARGE;
-    padding: $XLARGE;
-    text-align: center;
-    background-color: white;
-    border-radius: 4px;
-    h2 {
-      @include font-type($size: $MIDLARGE);
+  .contactMethodModal {
+    position: relative;
+    &__wrapper {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 100vw;
+      min-height: 100vh;
+      &Content {
+        position: relative;
+      }
     }
-    a {
-      @include font-type($size: $MIDLARGE);
-
+    &__close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
       color: $MAIN_COLOR;
-      text-decoration: none;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }
