@@ -28,6 +28,10 @@
         border-radius: 4px;
         cursor: pointer;
         opacity: 0.75;
+        transition: opacity 0.3s;
+        &:hover {
+          opacity: 1;
+        }
       }
     }
   }
@@ -42,11 +46,6 @@
   .contactContainer {
     &__title {
       margin: $XLARGE $SMALL 10vh;
-    }
-    &__contactMethods {
-      // display: flex;
-      // gap: $MEDIUM;
-      // justify-content: space-evenly;
     }
   }
 }
