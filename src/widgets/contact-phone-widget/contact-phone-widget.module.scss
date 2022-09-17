@@ -3,6 +3,24 @@
 
 //Small screens - MOBILE
 @media only screen {
+  .contactPhoneWidget {
+    display: grid;
+    gap: $LARGE;
+    padding: $LARGE;
+    padding-bottom: $XLARGE;
+    text-align: center;
+    background-color: white;
+    border-radius: $BORDER_RADIUS;
+    h2 {
+      @include font-type($size: $MIDLARGE);
+    }
+    a {
+      @include font-type($size: $MIDLARGE);
+
+      color: $MAIN_COLOR;
+      text-decoration: none;
+    }
+  }
 }
 
 //Medium screens - TABLET

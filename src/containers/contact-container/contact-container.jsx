@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BackgroundShape } from "../../components/background-shape";
 import { ContactFormWidget } from "../../widgets/contact-form-widget";
 import { ContactMethodModal } from "../../components/contact-method-modal";
-import { ContactPhone } from "../../components/contact-phone";
+import { ContactPhoneWidget } from "../../widgets/contact-phone-widget";
 
 import styles from "./contact-container.module.scss";
 
@@ -15,7 +15,7 @@ const ContactContainer = () => {
       case "Visit Us":
         return <div>Vist Us</div>;
       case "Call Us":
-        return <ContactPhone />;
+        return <ContactPhoneWidget />;
       case "Write Us":
         return <ContactFormWidget />;
       default:
