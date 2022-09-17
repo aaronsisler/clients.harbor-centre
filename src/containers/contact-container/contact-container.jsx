@@ -7,8 +7,8 @@ import { ContactPhone } from "../../components/contact-phone";
 import styles from "./contact-container.module.scss";
 
 const ContactContainer = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalContent, setModalContent] = useState(undefined);
+  const [isModalOpen, setIsModalOpen] = useState(true);
+  const [modalContent, setModalContent] = useState("Write Us");
 
   const determineContactModalChild = () => {
     switch (modalContent) {

@@ -16,7 +16,7 @@
       padding: $MIDLARGE;
       text-align: center;
       background-color: $MAIN_COLOR_DARKEN;
-      border-radius: 5px;
+      border-radius: $BORDER_RADIUS;
       box-shadow: $BOX_SHADOW_WIDGET_DARKEN;
     }
     &__form {
@@ -24,7 +24,7 @@
       margin: 0 auto;
       margin-top: $LARGE;
       background-color: white;
-      border-radius: 5px;
+      border-radius: $BORDER_RADIUS;
       box-shadow: $BOX_SHADOW_WIDGET;
     }
   }

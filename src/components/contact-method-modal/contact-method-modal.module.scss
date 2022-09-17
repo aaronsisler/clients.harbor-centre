@@ -12,8 +12,11 @@
       justify-content: center;
       min-width: 100vw;
       min-height: 100vh;
+      padding: $MEDIUM;
       &Content {
+        padding-inline: auto;
         position: relative;
+        width: fit-content;
       }
     }
     &__close {

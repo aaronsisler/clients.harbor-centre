@@ -9,12 +9,12 @@
     display: grid;
     grid-gap: $SMALL;
     grid-template-columns: 100%;
-    width: 100%;
+    min-width: 100%;
     height: 100%;
     padding: $LARGE $MEDIUM;
     opacity: 0.95;
     &__title {
-      @include font-type($MIDLARGE);
+      @include font-type($size: $MIDLARGE);
 
       margin-bottom: $SMALL;
       text-align: center;
@@ -31,6 +31,7 @@
       @include font-type($size: $MIDLARGE);
 
       margin: auto;
+      padding: $MEDIUM;
       text-align: center;
     }
   }
@@ -38,18 +39,16 @@
 
 //Medium screens - TABLET
 @media only screen and (min-width: $MEDIUM_SCREEN) {
-  .contactForm {
-    min-width: 350px;
-  }
 }
 
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
   .contactForm {
-    min-width: 500px;
-    max-width: 750px;
     &__title {
       @include font-type($size: $LARGE);
+    }
+    &__emailSent {
+      padding: $LARGE;
     }
   }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
+import { CloseX } from "../close-x";
 
 import styles from "./contact-method-modal.module.scss";
 
@@ -13,9 +14,10 @@ const ContactMethodModal = ({ isOpen, onClose, children }) => (
   >
     <Box className={styles.contactMethodModal__wrapper}>
       <div className={styles.contactMethodModal__wrapperContent}>
-        <div className={styles.contactMethodModal__close} onClick={onClose}>
-          X
-        </div>
+        <CloseX
+          className={styles.contactMethodModal__close}
+          onClick={onClose}
+        />
         {children}
       </div>
     </Box>
