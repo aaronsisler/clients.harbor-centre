@@ -11,4 +11,6 @@ const CloseX = ({ className, onClick }) => (
   </div>
 );
 
+// const CloseX = () => <div>CloseX Works!</div>;
+
 export { CloseX };

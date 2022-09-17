@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BackgroundShape } from "../../components/background-shape";
-import { ContactFormWidget } from "../../components/contact-form-widget";
+import { ContactFormWidget } from "../../widgets/contact-form-widget";
 import { ContactMethodModal } from "../../components/contact-method-modal";
 import { ContactPhone } from "../../components/contact-phone";
 

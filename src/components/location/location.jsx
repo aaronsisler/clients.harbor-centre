@@ -1,5 +1,5 @@
 import React from "react";
-import { GoogleMapWidget } from "../../components/google-map-widget";
+import { GoogleMapWidget } from "../../widgets/google-map-widget";
 
 import styles from "./location.module.scss";
 
