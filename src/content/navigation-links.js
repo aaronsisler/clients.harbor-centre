@@ -15,10 +15,7 @@ const navigationLinks = [
   {
     key: "connect-with-us",
     title: "Connect With Us",
-    links: [
-      { title: "Message Us", href: "/contact" },
-      { title: "Message Us Old", href: "/contact-old" },
-    ],
+    links: [{ title: "Message Us", href: "/contact" }],
   },
 ];
 
