@@ -23,7 +23,7 @@ export const sendEmail = async (data, done, fail) => {
   };
 
   try {
-    // await axios.post(`${SERVICES_GATEWAY_URL}/email`, emailData, emailOptions);
+    await axios.post(`${SERVICES_GATEWAY_URL}/email`, emailData, emailOptions);
     done();
   } catch (e) {
     fail();

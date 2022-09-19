@@ -7,13 +7,13 @@ import { ContactPhoneWidget } from "../../widgets/contact-phone-widget";
 import styles from "./contact-container.module.scss";
 
 const ContactContainer = () => {
-  const [isModalOpen, setIsModalOpen] = useState(true);
-  const [modalContent, setModalContent] = useState("Write Us");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState(undefined);
 
   const determineContactModalChild = () => {
     switch (modalContent) {
-      case "Visit Us":
-        return <div>Vist Us</div>;
+      // case "Visit Us":
+      //   return <div>Vist Us</div>;
       case "Call Us":
         return <ContactPhoneWidget />;
       case "Write Us":
@@ -39,12 +39,12 @@ const ContactContainer = () => {
       </h1>
       <BackgroundShape />
       <section className={styles.contactContainer__contactMethods}>
-        <button
+        {/* <button
           className={styles.contactMethodButton}
           onClick={() => handleOpen("Visit Us")}
         >
           Visit Us
-        </button>
+        </button> */}
         <button
           className={styles.contactMethodButton}
           onClick={() => handleOpen("Call Us")}
