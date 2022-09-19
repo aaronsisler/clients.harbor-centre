@@ -1,9 +1,7 @@
 @use "sass:color";
 
 // Colors
-// $MAIN_COLOR: #690359;
 $MAIN_COLOR: rgb(30, 108, 197);
-$MAIN_COLOR_INVERTED: #60a06a;
 $MAIN_COLOR_DARKEN: color.adjust(
   $color: $MAIN_COLOR,
   $lightness: -10%,
@@ -25,10 +23,8 @@ $ERROR_RED: color.adjust(
   $color: darkred,
   $lightness: 15%,
 );
-$PRETTY_BLUE: #1563ff;
-$PRETTY_PURPLE: #623ce4;
 
-// Feature Specific Colors
+// Feature Specific Items
 $FONT_GRAY: rgb(0, 0, 0, 0.8);
 $FONT_SEC_GRAY: rgb(44, 46, 47);
 $BORDER_GRAY: rgba(0, 0, 0, 0.5);
@@ -38,6 +34,7 @@ $BOX_SHADOW_WIDGET: rgba($MAIN_COLOR_LIGHTEN, 0.25) 0px 4px 8px -2px,
   rgba($MAIN_COLOR_LIGHTEN, 0.08) 0px 0px 0px 1px; // trello with color
 $BOX_SHADOW_WIDGET_DARKEN: 5px 0 3px rgba(0, 0, 0, 0.384),
   0 15px 12px rgba(0, 0, 0, 0.521);
+$BORDER_RADIUS: 4px;
 
 // Spacing
 $XXSMALL: 0.3rem;
@@ -49,6 +46,7 @@ $MIDLARGE: 2.4rem;
 $LARGE: 3.2rem;
 $XLARGE: 4.8rem;
 $XXLARGE: 7.6rem;
+$MAX_WIDTH__WIDGET: 500px;
 $MAX_WIDTH__TEXT: 600px;
 $MAX_WIDTH__CONTENT: 764px;
 

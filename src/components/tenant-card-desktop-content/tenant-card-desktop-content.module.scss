@@ -19,7 +19,7 @@
     height: fit-content;
     padding: $LARGE;
     background-color: whitesmoke;
-    border-radius: 10px;
+    border-radius: $BORDER_RADIUS;
     transform: translate(-50%, -45%);
     &__header {
       display: flex;

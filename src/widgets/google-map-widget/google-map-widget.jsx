@@ -5,7 +5,7 @@ import {
   GOOGLE_MAPS__LATITUDE,
   GOOGLE_MAPS__LONGITUDE,
 } from "../../config";
-import { GoogleMapMarker } from "../google-map-marker";
+import { GoogleMapMarker } from "../../components/google-map-marker";
 
 import styles from "./google-map-widget.module.scss";
 

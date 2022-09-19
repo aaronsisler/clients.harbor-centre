@@ -3,22 +3,23 @@
 
 //Small screens - MOBILE
 @media only screen {
-  .contactForm {
-    @include font-type();
-
-    display: grid;
-    grid-gap: $SMALL;
-    &__title {
-      @include font-type($size: $MIDLARGE);
-
-      text-align: center;
-      background-color: white;
-    }
-    &__message {
-      @include textarea();
-    }
-    &__button {
-      @include CTA-link();
+  .backgroundShape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    &__drawing {
+      position: absolute;
+      top: 30%;
+      z-index: -1;
+      width: 115vw;
+      height: 500px;
+      background: linear-gradient(to top right, #86f7cc, #67d7f5);
+      $INSIDE: 0 0, 0 400px, 115vw 200px;
+      transform: skew(50deg);
+      clip-path: polygon($INSIDE);
     }
   }
 }

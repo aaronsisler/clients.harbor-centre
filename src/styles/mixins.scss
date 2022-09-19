@@ -30,7 +30,7 @@
   text-transform: uppercase;
   text-decoration: none;
   background-color: $MAIN_COLOR;
-  border-radius: $XSMALL;
+  border-radius: $BORDER_RADIUS;
   cursor: pointer;
   &:hover {
     background-color: $MAIN_COLOR_LIGHTEN;
@@ -56,7 +56,7 @@
   text-decoration: none;
   background-color: $MAIN_COLOR;
   border: 1px solid rgba(255, 255, 255, 0.7);
-  border-radius: $XXSMALL;
+  border-radius: $BORDER_RADIUS;
   cursor: pointer;
   &:hover {
     background: $MAIN_COLOR_LIGHTEN;
@@ -73,5 +73,5 @@
 
   padding: $SMALL $XSMALL;
   border: 1px solid $BORDER_GRAY;
-  border-radius: 5px;
+  border-radius: $BORDER_RADIUS;
 }

@@ -3,22 +3,28 @@
 
 //Small screens - MOBILE
 @media only screen {
-  .contactForm {
-    @include font-type();
-
+  .contactMethodModal {
     display: grid;
-    grid-gap: $SMALL;
-    &__title {
-      @include font-type($size: $MIDLARGE);
-
-      text-align: center;
-      background-color: white;
+    &__wrapper {
+      display: grid;
+      justify-items: center;
+      height: fit-content;
+      &Content {
+        position: relative;
+        width: 100%;
+        max-width: $MAX_WIDTH__WIDGET;
+        height: fit-content;
+        margin-top: $XXLARGE;
+      }
     }
-    &__message {
-      @include textarea();
-    }
-    &__button {
-      @include CTA-link();
+    &__close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      color: $MAIN_COLOR;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }

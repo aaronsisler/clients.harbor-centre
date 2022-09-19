@@ -3,11 +3,22 @@
 
 //Small screens - MOBILE
 @media only screen {
-  .contactPhone {
-    h2 {
-      @include font-type($size: $MIDLARGE);
-
-      color: white;
+  .closeX {
+    &__line {
+      width: 25px;
+      height: 3px;
+      margin: 5px;
+      background-color: $MAIN_COLOR;
+      transition: all 0.3s ease;
+    }
+    .closeX__line:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .closeX__line:nth-child(2) {
+      opacity: 0;
+    }
+    .closeX__line:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
     }
   }
 }

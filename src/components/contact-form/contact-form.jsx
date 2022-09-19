@@ -7,6 +7,7 @@ import { CLIENT_NAME } from "../../config";
 import { sendEmail } from "../../utils";
 import FormError from "../../atoms/form-error";
 import Input from "../../atoms/input";
+import { ContactEmailSentWidget } from "../../widgets/contact-email-sent-widget";
 
 import styles from "./contact-form.module.scss";
 
@@ -46,15 +47,7 @@ const ContactForm = () => {
   } = useForm(useFormOptions);
 
   if (emailSent) {
-    return (
-      <div className={styles.contactForm}>
-        <h1 className={styles.contactForm__emailSent}>
-          Thank you for reaching out!
-          <br />
-          We are excited to get back in touch with you.
-        </h1>
-      </div>
-    );
+    return <ContactEmailSentWidget />;
   }
 
   const onSubmit = ({ emailAddress, message, name, phoneNumber }) => {
@@ -82,7 +75,7 @@ const ContactForm = () => {
 
   return (
     <form className={styles.contactForm} onSubmit={handleSubmit(onSubmit)}>
-      <h1 className={styles.contactForm__title}>Send a message</h1>
+      <h2 className={styles.contactForm__title}>Send a message</h2>
       <Input
         hasError={Boolean(errors?.name)}
         label="Name"
@@ -126,4 +119,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export { ContactForm };

@@ -3,23 +3,12 @@
 
 //Small screens - MOBILE
 @media only screen {
-  .contactForm {
-    @include font-type();
-
-    display: grid;
-    grid-gap: $SMALL;
-    &__title {
-      @include font-type($size: $MIDLARGE);
-
-      text-align: center;
-      background-color: white;
-    }
-    &__message {
-      @include textarea();
-    }
-    &__button {
-      @include CTA-link();
-    }
+  .contactFormWidget {
+    width: 100%;
+    padding: $MEDIUM;
+    background-color: white;
+    border-radius: $BORDER_RADIUS;
+    box-shadow: $BOX_SHADOW_WIDGET;
   }
 }
 

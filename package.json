@@ -12,7 +12,9 @@
     "lint": "eslint \"./**/*.{js,jsx}\"",
     "gen:comp": "node ./node_modules/@ebsolutions/generate-react-templates --type=COMP",
     "gen:cont": "node ./node_modules/@ebsolutions/generate-react-templates --type=CONT",
-    "gen:page": "node ./node_modules/@ebsolutions/generate-react-templates --type=PAGE"
+    "gen:page": "node ./node_modules/@ebsolutions/generate-react-templates --type=PAGE",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -48,11 +50,23 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.1",
     "@ebsolutions/generate-react-templates": "^1.7.0",
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-interactions": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/builder-webpack5": "^6.5.12",
+    "@storybook/manager-webpack5": "^6.5.12",
+    "@storybook/preset-scss": "^1.0.3",
+    "@storybook/react": "^6.5.12",
+    "@storybook/testing-library": "^0.0.13",
+    "babel-loader": "^8.2.5",
     "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
     "eslint-config-next": "^12.0.4",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-storybook": "^0.6.4",
     "husky": "^7.0.4",
     "prettier": "^2.4.1",
     "stylelint": "^14.1.0",
