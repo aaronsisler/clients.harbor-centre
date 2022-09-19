@@ -10,7 +10,8 @@ const ContactMethodModal = ({ isOpen, onClose, children }) => (
     open={isOpen}
     onClose={onClose}
     aria-labelledby="Modal for selected contact method"
-    aria-describedby="Information for slected contact method"
+    aria-describedby="Information for selected contact method"
+    className={styles.contactMethodModal}
   >
     <Box className={styles.contactMethodModal__wrapper}>
       <div className={styles.contactMethodModal__wrapperContent}>

@@ -6,8 +6,8 @@
   .contactPhoneWidget {
     display: grid;
     gap: $LARGE;
-    padding: $LARGE;
-    padding-bottom: $XLARGE;
+    width: 100%;
+    padding-block: $LARGE;
     text-align: center;
     background-color: white;
     border-radius: $BORDER_RADIUS;

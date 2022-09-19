@@ -4,19 +4,17 @@
 //Small screens - MOBILE
 @media only screen {
   .contactMethodModal {
-    position: relative;
+    display: grid;
     &__wrapper {
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 100vw;
-      min-height: 100vh;
-      padding: $MEDIUM;
+      display: grid;
+      justify-items: center;
+      height: fit-content;
       &Content {
-        padding-inline: auto;
         position: relative;
-        width: fit-content;
+        width: 100%;
+        max-width: $MAX_WIDTH__WIDGET;
+        height: fit-content;
+        margin-top: $XXLARGE;
       }
     }
     &__close {
