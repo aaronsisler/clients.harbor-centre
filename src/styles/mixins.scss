@@ -69,7 +69,7 @@
 }
 
 @mixin textarea() {
-  @include font-type($size: $MEDIUM);
+  @include font-type($size: $MIDSMALL);
 
   padding: $SMALL $XSMALL;
   border: 1px solid $BORDER_GRAY;

@@ -13,8 +13,8 @@
     "gen:comp": "node ./node_modules/@ebsolutions/generate-react-templates --type=COMP",
     "gen:cont": "node ./node_modules/@ebsolutions/generate-react-templates --type=CONT",
     "gen:page": "node ./node_modules/@ebsolutions/generate-react-templates --type=PAGE",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "sb": "start-storybook -p 3000",
+    "build-sb": "build-storybook"
   },
   "repository": {
     "type": "git",

@@ -3,10 +3,9 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
+import { Input } from "../../atoms/input";
 import { CLIENT_NAME } from "../../config";
 import { sendEmail } from "../../utils";
-import FormError from "../../atoms/form-error";
-import Input from "../../atoms/input";
 import { ContactEmailSentWidget } from "../../widgets/contact-email-sent-widget";
 
 import styles from "./contact-form.module.scss";
@@ -77,26 +76,29 @@ const ContactForm = () => {
     <form className={styles.contactForm} onSubmit={handleSubmit(onSubmit)}>
       <h2 className={styles.contactForm__title}>Send a message</h2>
       <Input
+        className={styles.contactForm__input}
+        errorMessage={errorMessages.name}
         hasError={Boolean(errors?.name)}
         label="Name"
         name="name"
         registerProp={register}
       />
-      {errors?.name && <FormError error={errorMessages.name} />}
       <Input
+        className={styles.contactForm__input}
+        errorMessage={errorMessages.emailAddress}
         hasError={Boolean(errors?.emailAddress)}
         label="Email"
         name="emailAddress"
         registerProp={register}
       />
-      {errors?.emailAddress && <FormError error={errorMessages.emailAddress} />}
       <Input
+        className={styles.contactForm__input}
+        errorMessage={errorMessages.phoneNumber}
         hasError={Boolean(errors?.phoneNumber)}
         label="Phone (Digits only, no dashes, etc.)"
         name="phoneNumber"
         registerProp={register}
       />
-      {errors?.phoneNumber && <FormError error={errorMessages.phoneNumber} />}
       <textarea
         className={styles.contactForm__message}
         name="message"
