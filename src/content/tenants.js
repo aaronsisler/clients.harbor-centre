@@ -161,27 +161,21 @@ const tenants = [
   },
   {
     tenantId: "suite-b-5",
-    name: "Latitude 36 Boutique",
+    name: "Earthbound NC",
     links: {
       website: "",
-      facebook: "https://www.facebook.com/Latitude36/",
-      instagram: "",
+      facebook: "https://www.facebook.com/saltyknotsmacrameobx",
+      instagram:
+        "https://www.instagram.com/earthboundnc/?igshid=NmNmNjAwNzg%3D",
     },
     images: {
       cardProfile: {
         src: `${CDN_URL}/tenants/tenant-suite-b-5/${cardProfileImageName}`,
         alt: "Card profile",
       },
-      gallery: [
-        {
-          src: `${CDN_URL}/tenants/tenant-suite-b-5/tenant-image__1.jpg`,
-          alt: "Store inventory",
-        },
-      ],
     },
     bio: [
-      "Latitude 36, where there's a style for every latitude. We are an on-trend women's clothing boutique. We offer merchandise that is fun and comfortable, yet versatile in a full range of sizes.",
-      "Come reach outside of your everyday wardrobe today!",
+      "Earthbound NC has custom made earthenware products for all to enjoy.",
     ],
   },
 ];
