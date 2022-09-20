@@ -1,36 +1,35 @@
 import React from "react";
-import PropTypes from "prop-types";
 import cn from "classnames";
+import TextField from "@mui/material/TextField";
+import PropTypes from "prop-types";
 
 import styles from "./input.module.scss";
 
-const Input = ({ hasError, label, name, registerProp }) => (
-  <div className={styles.input}>
-    <input name={name} {...registerProp(name)} type="text" />
-    <label
-      htmlFor={name}
-      className={cn(
-        styles.input__label,
-        hasError ? styles.input__labelError : ""
-      )}
-    >
-      <span
-        className={cn(
-          styles.input__span,
-          hasError ? styles.input__labelSpan : ""
-        )}
-      >
-        {label}
-      </span>
-    </label>
-  </div>
+const Input = ({
+  className,
+  errorMessage,
+  hasError,
+  label,
+  name,
+  registerProp,
+}) => (
+  <TextField
+    className={cn(className, styles.input)}
+    error={hasError}
+    label={label}
+    name={name}
+    helperText={hasError ? errorMessage : ""}
+    {...registerProp(name)}
+  />
 );
 
 Input.propTypes = {
+  className: PropTypes.string,
+  errorMessage: PropTypes.string,
   hasError: PropTypes.bool,
   label: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   registerProp: PropTypes.func.isRequired,
 };
 
-export default Input;
+export { Input };

@@ -14,6 +14,17 @@
       text-align: center;
       background-color: white;
     }
+    &__input {
+      background-color: white;
+      label,
+      input,
+      p {
+        @include font-type($size: $MIDSMALL);
+      }
+      p {
+        margin-inline: 0;
+      }
+    }
     &__message {
       @include textarea();
     }
