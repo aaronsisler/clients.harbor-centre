@@ -3,7 +3,7 @@ import React from "react";
 import { CloseX } from "./close-x";
 
 const config = {
-  title: "Components/Close-X",
+  title: "Atoms/Close-X",
   component: CloseX,
 };
 export default config;
